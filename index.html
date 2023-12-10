@@ -43,6 +43,14 @@
           <li class="nav_items">
             <a href="./assets/pdf/myCv.pdf" class="" target="_blank">My CV</a>
           </li>
+
+          <li class="nav_items">
+            <label class="mode">
+              <input type="checkbox" id="darkModeToggle">
+              <i class='bx bxs-moon'></i>
+            </label>
+          </li>
+          
         </ul>
       </div>
 
@@ -57,10 +65,12 @@
     <section class="home bd_grid" id="home">
       <div class="home_data" data-aos="fade-down">
         <h1 class="home_title">
-          Hi, <br />I'm <span class="home_title-color">Asardeen</span><br />Wellcome...
+          Hi, <br />I'm <span class="animate-charcter">Asardeen</span><br /> Web Developer
         </h1>
         <a href="#contact" class="button"> Contact Me</a>
       </div>
+
+      
 
       <div class="home_social">
       
@@ -517,6 +527,27 @@
       once: false,
     });
   </script>
+
+<!--Script for Dark Mode-->
+  <script>
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const body = document.body;
+    const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+    if (isDarkMode) {
+      body.classList.add('dark-mode');
+      darkModeToggle.checked = true;
+    }
+    darkModeToggle.addEventListener('change', () => {
+      if (darkModeToggle.checked) {
+        body.classList.add('dark-mode');
+        localStorage.setItem('darkMode', 'enabled');
+      } else {
+        body.classList.remove('dark-mode');
+        localStorage.setItem('darkMode', 'disabled');
+      }
+    });
+  </script>
+
 </body>
 
 </html>
