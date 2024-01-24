@@ -668,3 +668,13 @@ img {
   box-shadow: 0 4px 17px rgb(80 80 80 / 31%);
   background: var(--primary-dark);
 }
+
+
+
+.logo {
+  width: 100px; /* Adjust the width as needed */
+  height: auto; /* Maintains the aspect ratio */
+  margin-right: 10px; /* Add margin to the right if needed */
+  background-color: transparent; /* Ensure the background is transparent */
+  border: none; /* Remove any border */
+}
