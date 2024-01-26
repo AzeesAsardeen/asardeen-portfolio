@@ -223,33 +223,23 @@ img {
   right: 0;
   bottom: 45px;
   width: 300px;
-
   margin-right: 5%;
-
-  
 }
 
 .home_img img {
   width: auto;
   height: auto;
-  
   object-fit: cover; /* or 'contain' */
-
   /*border-radius: 16px; */
   border-radius: 50%; /**if profile want to Round shape*/
   overflow: hidden;
-  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
-  
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.4);
   transition: 0.5s;
-
   width: 100%;
 }
 
 .home_img img:hover {
-  transition: 0.5s;
-
-  transform: translateY(-20px);
-  transition: all .9s;
+  transform: scale(1.04);
 
 }
 
@@ -263,10 +253,13 @@ img {
   font-weight: var(--font-semi);
   border-radius: 0.5rem;
   background: var(--gardient-color);
+  transition: 0.4s;
 }
 
 .button:hover {
   box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
+  transform: scale(1.02);
+  transition: 0.3s;
 }
 
 
@@ -282,21 +275,21 @@ img {
   display: inline-block;
   color: #fff;
   padding: 0.75rem 2.5rem;
-  
   border-radius: 0.5rem;
   background: var(--gardient-color);
-
-
   font-size: 16px;
   text-align: center;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  transition: 0.4s;
 }
 
 /* Hover effect */
 .custom-button:hover {
   box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
+  transform: scale(1.02);
+  transition: 0.3s;
 }
 
 
@@ -677,4 +670,10 @@ img {
   margin-right: 10px; /* Add margin to the right if needed */
   background-color: transparent; /* Ensure the background is transparent */
   border: none; /* Remove any border */
+  transition: 0.4s;
+}
+
+.logo:hover{
+  transform: scale(1.04);
+  transition: 0.4s;
 }
