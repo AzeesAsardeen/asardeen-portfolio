@@ -1,5 +1,6 @@
 /* Google Font - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 /* Variables */
 :root {
   --header-height: 3rem;
@@ -12,7 +13,8 @@
   --first-color: #4070f4;
   --second-color: #1e0e31;
   --skill-color: #40f464;
-  --gardient-color: linear-gradient(to right, #0197fb, #0af37e); /*button color*/
+  --gardient-color: linear-gradient(to right, #0197fb, #0af37e);
+  /*button color*/
 }
 
 /* FONT STYLE */
@@ -229,9 +231,11 @@ img {
 .home_img img {
   width: auto;
   height: auto;
-  object-fit: cover; /* or 'contain' */
+  object-fit: cover;
+  /* or 'contain' */
   /*border-radius: 16px; */
-  border-radius: 50%; /**if profile want to Round shape*/
+  border-radius: 50%;
+  /**if profile want to Round shape*/
   overflow: hidden;
   box-shadow: 0 5px 18px rgba(0, 0, 0, 0.4);
   transition: 0.5s;
@@ -393,7 +397,7 @@ img {
 }
 
 .skill_Node {
-  width: 75%;
+  width: 85%;
 }
 
 .skill_express_mongo {
@@ -409,15 +413,71 @@ img {
 }
 
 .skill_js {
-  width: 75%;
+  width: 85%;
 }
 
 .skill_python {
-  width: 80%;
+  width: 60%;
 }
 
 .skill_ui {
+  width: 90%;
+}
+
+.skill_git {
+  width: 80%;
+}
+
+.skill_docker {
+  width: 65%;
+}
+
+.skill_typescript {
+  width: 70%;
+}
+
+.skill_angular {
+  width: 75%;
+}
+
+.skill_aws {
+  width: 65%;
+}
+
+.skill_sql {
+  width: 60%;
+}
+
+.skill_devops {
+  width: 75%;
+}
+
+.skill_figma {
+  width: 90%;
+}
+
+.skill_java {
+  width: 80%;
+}
+
+.skill_rest {
   width: 85%;
+}
+
+.skill_agile {
+  width: 75%;
+}
+
+.skill_testing {
+  width: 65%;
+}
+
+.skill_springboot {
+  width: 80%;
+}
+
+.skill_microservices {
+  width: 75%;
 }
 
 /* WORK */
@@ -500,6 +560,7 @@ img {
     padding-top: 4rem;
     padding-bottom: 3rem;
   }
+
   .section-title {
     margin-bottom: var(--mb-6);
   }
@@ -538,6 +599,7 @@ img {
   .home_data {
     align-self: flex-end;
   }
+
   .home_social {
     flex-direction: row;
     align-self: flex-end;
@@ -578,6 +640,7 @@ img {
   .contact_form {
     width: 400px;
   }
+
   .contact_container {
     justify-items: center;
   }
@@ -598,13 +661,11 @@ img {
 /*for my Profile*/
 .animate-charcter {
   text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
-  );
+  background-image: linear-gradient(-225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%);
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
@@ -620,7 +681,7 @@ img {
 
 @keyframes textclip {
   to {
-     background-position: 200% center;
+    background-position: 200% center;
   }
 }
 
@@ -647,13 +708,15 @@ img {
   cursor: pointer;
 }
 
-.dark-mode .logo a, 
+.dark-mode .logo a,
 .dark-mode ul li a,
-.dark-mode a,  
+.dark-mode a,
 .dark-mode .main h1 {
   color: #fff;
 }
-.dark-mode ul li a.active, .dark-mode ul li a:hover {
+
+.dark-mode ul li a.active,
+.dark-mode ul li a:hover {
   color: var(--primary-color);
 }
 
@@ -665,15 +728,20 @@ img {
 
 
 .logo {
-  width: 100px; /* Adjust the width as needed */
-  height: auto; /* Maintains the aspect ratio */
-  margin-right: 10px; /* Add margin to the right if needed */
-  background-color: transparent; /* Ensure the background is transparent */
-  border: none; /* Remove any border */
+  width: 100px;
+  /* Adjust the width as needed */
+  height: auto;
+  /* Maintains the aspect ratio */
+  margin-right: 10px;
+  /* Add margin to the right if needed */
+  background-color: transparent;
+  /* Ensure the background is transparent */
+  border: none;
+  /* Remove any border */
   transition: 0.4s;
 }
 
-.logo:hover{
+.logo:hover {
   transform: scale(1.04);
   transition: 0.4s;
 }
