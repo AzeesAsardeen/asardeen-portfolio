@@ -289,6 +289,7 @@ img {
   transition: 0.4s;
 }
 
+
 /* Hover effect */
 .custom-button:hover {
   box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
@@ -551,6 +552,16 @@ img {
   margin: 0 var(--mb-2);
 }
 
+.home_social {
+  flex-direction: row;
+  align-self: flex-end;
+  justify-content: center;
+}
+
+.contact_container {
+  justify-items: center;
+}
+
 @media screen and (min-width: 768px) {
   body {
     margin: 0;
@@ -600,11 +611,7 @@ img {
     align-self: flex-end;
   }
 
-  .home_social {
-    flex-direction: row;
-    align-self: flex-end;
-    justify-content: center;
-  }
+
 
   .home_social-icon {
     margin-bottom: 0;
