@@ -340,9 +340,12 @@ img {
   justify-content: center;
 }
 
-.about_img svg {
-  width: 300px;
-  border-radius: 0.5rem;
+.about_img img {
+  border-radius: 8px;
+  height: 300px;
+  width: 500px;
+  object-fit: cover;
+  /* Ensures the image covers the dimensions without distortion */
 }
 
 /* SKILLS */
