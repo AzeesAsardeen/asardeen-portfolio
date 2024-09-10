@@ -736,7 +736,9 @@ img {
   background: var(--primary-dark);
 }
 
-
+.dark-mode .nav_toggle {
+  color:#fff;
+}
 
 .logo {
   width: 100px;
