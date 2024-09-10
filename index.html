@@ -9,6 +9,13 @@
   <link rel="stylesheet" href="./assets/css/styles.css" />
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init("F15PPLHuipmmZlgb7"); // Replace with your EmailJS public key
+    })();
+</script>
+
 </head>
 
 
@@ -847,18 +854,48 @@
         </a>
       </div>
 
+      <!-- Contact Form -->
       <div class="contact_container bd_grid">
-
-        <form action="#" class="contact_form">
-          <input type="text" placeholder="Name" class="control_input" data-aos="fade-right" data-aos-delay="250" />
-          <input type="mail" placeholder="Email" class="control_input" data-aos="fade-right" data-aos-delay="300" />
-          <textarea name="" id="" cols="0" rows="10" class="control_input" data-aos="fade-right"
-            data-aos-delay="400"></textarea>
-
-          <input type="button" value="Send" class="control_button button" data-aos="fade-right" data-aos-delay="450" />
+        <form id="contact-form" class="contact_form">
+          <input 
+            type="text" 
+            name="from_name" 
+            placeholder="Name" 
+            class="control_input" 
+            data-aos="fade-right" 
+            data-aos-delay="250" 
+            required 
+          />
+          <input 
+            type="email" 
+            name="from_email" 
+            placeholder="Email" 
+            class="control_input" 
+            data-aos="fade-right" 
+            data-aos-delay="300" 
+            required 
+          />
+          <textarea 
+            name="message" 
+            cols="0" 
+            rows="10" 
+            placeholder="Message"
+            class="control_input" 
+            data-aos="fade-right" 
+            data-aos-delay="400" 
+            required
+          ></textarea>
+      
+          <input 
+            type="submit" 
+            value="Send" 
+            class="control_button button" 
+            data-aos="fade-right" 
+            data-aos-delay="450" 
+          />
         </form>
-
       </div>
+      
     </section>
 
     <!-- Footer Section -->

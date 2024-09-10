@@ -27,3 +27,21 @@ function linkAction(){
 }
 
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+
+// CONTACT FORM js code
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent default form submission
+    
+      // Get the form data
+      const formData = new FormData(this);
+    
+      // Use EmailJS to send the form data
+      emailjs.sendForm('service_5huckw5', 'template_9qe856m', this, 'F15PPLHuipmmZlgb7')
+        .then(function(response) {
+          console.log('SUCCESS!', response.status, response.text);
+        }, function(error) {
+          console.log('FAILED...', error);
+        });
+    });
+    
