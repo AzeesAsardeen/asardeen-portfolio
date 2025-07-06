@@ -936,3 +936,125 @@ img {
   transition-delay: 0.5s;
   opacity: 1;
 }
+
+
+/* EXPERIENCE SECTION */
+.experience_container {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.experience_card {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  background-color: var(--container-color);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease;
+  flex-wrap: wrap;
+}
+
+.experience_card:hover {
+  transform: translateY(-5px);
+}
+
+.experience_icon {
+  font-size: 3rem;
+  color: var(--first-color);
+}
+
+.experience_content {
+  flex: 1;
+  min-width: 250px;
+}
+
+.experience_role {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--title-color);
+}
+
+.experience_company {
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.experience_desc {
+  font-size: 0.95rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.experience_points {
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.experience_points li {
+  list-style-type: disc;
+  margin-bottom: 0.5rem;
+}
+
+.experience_tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.experience_tech span {
+  background-color: var(--first-color-light);
+  color: var(--first-color-dark);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.experience_links a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: var(--first-color);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.experience_links a:hover {
+  color: var(--first-color-dark);
+}
+
+@media screen and (max-width: 768px) {
+  .experience_card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .experience_content {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .experience_points {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .experience_points li {
+    list-style-position: inside;
+  }
+
+  .experience_tech {
+    justify-content: center;
+  }
+
+  .experience_links {
+    text-align: center;
+  }
+}
