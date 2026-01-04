@@ -485,6 +485,42 @@ img {
   width: 75%;
 }
 
+.skill_azure {
+  width: 65%;
+}
+
+.skill_ai {
+  width: 75%;
+}
+
+.skill_playwright {
+  width: 70%;
+}
+
+.skill_salesforce {
+  width: 70%;
+}
+
+.skill_laravel {
+  width: 75%;
+}
+
+.skill_sqlserver {
+  width: 75%;
+}
+
+.skill_mysql {
+  width: 80%;
+}
+
+.skill_dotnet {
+  width: 80%;
+}
+
+.skill_csharp {
+  width: 85%;
+}
+
 /* WORK */
 
 .work {
@@ -737,7 +773,7 @@ img {
 }
 
 .dark-mode .nav_toggle {
-  color:#fff;
+  color: #fff;
 }
 
 .logo {
