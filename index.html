@@ -1,1194 +1,612 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Azar's Portfolio</title>
-  <link rel="stylesheet" href="./assets/css/styles.css" />
-  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Asardeen Azees: software engineer, AI automation engineer, and full-stack developer.">
+  <meta name="theme-color" content="#f3f6fb" id="theme-color-meta">
+  <title>Asardeen Azees | Portfolio</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
-
-
 <body>
-  <!-- Header Section -->
-  <header class="header">
-    <nav class="nav bd_grid">
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-      <div>
-        <!-- Dark Mode -->
-        <label class="mode">
-          <input type="checkbox" id="darkModeToggle" class="nav_link active">
-          <img src="./assets/img/AsarLogo.png" alt="Asar's Logo" class="logo">
-        </label>
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Go to home">
+        <span class="brand-rays" aria-hidden="true"></span>
+        <span class="brand-name">Asardeen Azees</span>
+      </a>
 
-        <!-- Add your logo here --><!--
-        <a href="#" class="nav_logo">
-          <img src="./assets/img/AsarLogo.png" alt="Asar's Logo" class="logo">
-        </a>-->
-
-      </div>
-
-
-
-      <div class="nav_menu" id="nav_menu">
-        <ul class="nav_list">
-          <li class="nav_items">
-            <a href="#home" class="nav_link active">
-              < Home />
-            </a>
-          </li>
-          <li class="nav_items">
-            <a href="#about" class="nav_link active">About</a>
-          </li>
-          <li class="nav_items">
-            <a href="#skills" class="nav_link active">Skills</a>
-          </li>
-          <li class="nav_items">
-            <a href="#experience" class="nav_link active">Experience</a>
-          </li>
-          <li class="nav_items">
-            <a href="#projects" class="nav_link active">Projects</a>
-          </li>
-          <li class="nav_items">
-            <a href="#certificates" class="nav_link active">Certificates</a>
-          </li>
-          <li class="nav_items">
-            <a href="#contact" class="nav_link active">Contact</a>
-          </li>
-
-          <!-- Dark Mode -->
-          <!--
-          <li class="nav_items">
-            <label class="mode">
-              <input type="checkbox" id="darkModeToggle" class="nav_link active">
-              <i class='bx bxs-moon'></i>
-            </label>
-          </li>-->
-
-        </ul>
-      </div>
-
-      <div class="nav_toggle" id="nav_toggle">
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
         <i class="bx bx-menu-alt-right"></i>
+      </button>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#experience">Experience</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#certificates">Certificates</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+          <span class="theme-toggle-track" aria-hidden="true">
+            <span class="theme-toggle-glow"></span>
+            <span class="theme-toggle-icons-bg">
+              <i class="bx bx-sun"></i>
+              <i class="bx bx-moon"></i>
+            </span>
+            <span class="theme-toggle-thumb">
+              <i class="bx bx-moon theme-toggle-thumb-i theme-toggle-thumb-i--moon"></i>
+              <i class="bx bx-sun theme-toggle-thumb-i theme-toggle-thumb-i--sun"></i>
+            </span>
+          </span>
+          <span class="theme-toggle-label">Dark</span>
+        </button>
       </div>
     </nav>
   </header>
 
-  <main class="main">
+  <main id="main-content">
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content hero-animate">
+          <p class="eyebrow">Software Engineer · AI Automation Engineer · Full-Stack</p>
+          <h1>Hi, I'm <span>Asardeen Azees</span></h1>
+          <p class="hero-description">
+            I build full-stack web apps and automation. I focus on clear architecture, UIs that work on real devices,
+            backends that scale, and ML only where it earns its place.
+          </p>
 
-    <!-- Home Section -->
-    <section class="skills section" id="home">
-      <div class="skills_container bd_grid">
-
-        <!--right side-->
-        <!-- Home content -->
-        <div>
-          <div class="home_data" data-aos="fade-down">
-            <h1 class="home_title">
-              Hi, <br />I'm <span class="animate-charcter">Asardeen</span><br /> Developer
-            </h1>
-
-            <a href="#contact" class="button"> Contact Me</a>
+          <div class="hero-badges">
+            <span class="hero-badge hero-badge--accent">BSc (Hons) IT · SLIIT</span>
+            <span class="hero-badge">Software engineering &amp; AI automation</span>
           </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Contact Me</a>
+            <a class="btn btn-secondary" href="#projects">View Projects</a>
+          </div>
+
+          <ul class="social-list" aria-label="Social links">
+            <li><a href="https://github.com/IT21231896" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bx bxl-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/asardeen-azees/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bx bxl-linkedin-square"></i></a></li>
+            <li><a href="https://web.facebook.com/kijan.mohamed.7" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bx bxl-facebook-circle"></i></a></li>
+            <li><a href="https://instagram.com/hijan_azar?igshid=YTQwZjQ0NmI0OA==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bx bxl-instagram"></i></a></li>
+          </ul>
         </div>
 
-        <!--left side-->
-        <!-- Profile image -->
-        <div>
-          <div class="container" data-aos="fade-up">
-            <div class="card-wrapper">
-              <div class="card">
+        <div class="hero-visual hero-animate hero-animate-delay">
+          <div class="hero-card">
+            <div class="hero-card-frame">
+              <img src="./assets/img/newProfile3.JPG" alt="Asardeen Azees profile photo" width="480" height="480" loading="eager" fetchpriority="high">
+            </div>
+            <div class="hero-card-info">
+              <h2>Asardeen Azees</h2>
+              <p>Software engineer and AI automation engineer. I care about shipping things that keep working after launch.</p>
+              <span class="hero-card-role">Open to opportunities</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                <!-- Profile image -->
-                <div class="card-image">
-                  <img src="./assets/img/newProfile3.JPG" alt="profile image">
-                </div>
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">About</p>
+          <h2>About Me</h2>
+        </div>
 
-                <!-- Social media icons -->
-                <ul class="social-icons">
-                  <li>
-                    <a href="https://web.facebook.com/kijan.mohamed.7" target="_blank">
-                      <i class="bx bxl-facebook-circle"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://instagram.com/hijan_azar?igshid=YTQwZjQ0NmI0OA==" target="_blank">
-                      <i class="bx bxl-instagram"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com/in/asardeen-azees/" target="_blank">
-                      <i class="bx bxl-linkedin-square"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/IT21231896" target="_blank">
-                      <i class="bx bxl-github"></i>
-                    </a>
-                  </li>
-                </ul>
-                <div class="details">
-                  <h2>Asardeen Azees
-                    <br>
-                    <span class="job-title">Developer</span>
-                  </h2>
-                </div>
+        <div class="about-grid">
+          <article class="card reveal">
+            <h3>Profile</h3>
+            <p>
+              BSc (Hons) Information Technology (SLIIT). I have shipped work on enterprise systems, full-stack web apps,
+              process automation, and ML-backed automation where it fit the problem.
+            </p>
+            <p>
+              I like turning vague requirements into something concrete: schema design, APIs people can actually call,
+              and UIs that do not fall apart on mobile. New tools are fine; I learn them when the job needs it.
+              I work best with a small team moving fast and reviewing each other&apos;s code.
+            </p>
+            <p>
+              Right now I am looking for a place where I can keep leveling up as an engineer.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <h3>Education</h3>
+            <p><strong>Sri Lanka Institute of Information Technology (SLIIT)</strong></p>
+            <p>Degree: <strong>BSc (Hons) in Information Technology</strong></p>
+            <p>Graduation: <strong>June 2025</strong></p>
+            <p>
+              The degree covered software development, databases, and systems analysis, plus plenty of hands-on
+              coursework in web and mobile, full-stack builds, and wiring smaller apps into larger systems.
+            </p>
+            <img class="education-image" src="./assets/img/sliit.jpg" alt="SLIIT logo" width="600" height="220" loading="lazy">
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Stack</p>
+          <h2>Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-group card reveal">
+            <h3>Full-Stack &amp; Backend</h3>
+            <div class="skill-list">
+              <div class="skill-item" data-level="85"><span>C#</span><span>85%</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+              <div class="skill-item" data-level="80"><span>ASP.NET Core / MVC</span><span>80%</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+              <div class="skill-item" data-level="80"><span>MySQL</span><span>80%</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+              <div class="skill-item" data-level="75"><span>SQL Server</span><span>75%</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+              <div class="skill-item" data-level="75"><span>Laravel</span><span>75%</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+              <div class="skill-item" data-level="85"><span>Node.js</span><span>85%</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+              <div class="skill-item" data-level="80"><span>Express.js &amp; MongoDB</span><span>80%</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+              <div class="skill-item" data-level="80"><span>Spring Boot</span><span>80%</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+              <div class="skill-item" data-level="85"><span>REST APIs</span><span>85%</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+              <div class="skill-item" data-level="60"><span>SQL</span><span>60%</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+            </div>
+          </article>
+
+          <article class="skill-group card reveal">
+            <h3>Frontend &amp; Design</h3>
+            <div class="skill-list">
+              <div class="skill-item" data-level="95"><span>HTML5</span><span>95%</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+              <div class="skill-item" data-level="85"><span>CSS3</span><span>85%</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+              <div class="skill-item" data-level="85"><span>JavaScript</span><span>85%</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+              <div class="skill-item" data-level="70"><span>TypeScript</span><span>70%</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+              <div class="skill-item" data-level="85"><span>React.js</span><span>85%</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+              <div class="skill-item" data-level="75"><span>Angular</span><span>75%</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+              <div class="skill-item" data-level="90"><span>UI / UX</span><span>90%</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+              <div class="skill-item" data-level="90"><span>Figma</span><span>90%</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+              <div class="skill-item" data-level="70"><span>Python</span><span>70%</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+            </div>
+          </article>
+
+          <article class="skill-group card reveal">
+            <h3>Architecture, Cloud &amp; Delivery</h3>
+            <div class="skill-list">
+              <div class="skill-item" data-level="75"><span>Microservices Architecture</span><span>75%</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+              <div class="skill-item" data-level="70"><span>Salesforce</span><span>70%</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+              <div class="skill-item" data-level="70"><span>Playwright Automation</span><span>70%</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+              <div class="skill-item" data-level="75"><span>AI / ML Integration</span><span>75%</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+              <div class="skill-item" data-level="75"><span>Agile Methodologies</span><span>75%</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+              <div class="skill-item" data-level="65"><span>Software Testing</span><span>65%</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+              <div class="skill-item" data-level="60"><span>Docker</span><span>60%</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+              <div class="skill-item" data-level="65"><span>AWS</span><span>65%</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+              <div class="skill-item" data-level="75"><span>DevOps</span><span>75%</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+              <div class="skill-item" data-level="80"><span>Java</span><span>80%</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+              <div class="skill-item" data-level="80"><span>Git</span><span>80%</span><div class="skill-track"><div class="skill-fill"></div></div></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Recent work</p>
+          <h2>Experience</h2>
+        </div>
+
+        <article class="timeline-card card reveal">
+          <div class="timeline-header">
+            <h3>AI Automation Engineer (Intern)</h3>
+            <p>Lanka.tax / MY Online (Pvt) Ltd, currently working</p>
+          </div>
+          <p>
+            Building and running automation for <strong>a production tax-filing portal</strong>: end-to-end
+            <strong>Python</strong> and <strong>Playwright</strong> pipelines, <strong>AWS</strong> serverless orchestration,
+            <strong>Salesforce</strong> sync, and monitoring so tax workflows need less manual handling.
+          </p>
+          <ul class="list-points">
+            <li><strong>Built and deployed</strong> end-to-end automation pipelines for that portal with <strong>Python</strong> and <strong>Playwright</strong>, cutting manual tax processing load.</li>
+            <li><strong>Designed</strong> a serverless orchestration setup on <strong>AWS</strong> (<strong>Lambda</strong> + <strong>ECS Fargate</strong>) to start and manage workflows (Return Filing, PIN Requests, Payment Info, DIN).</li>
+            <li><strong>Developed</strong> a centralized automation orchestrator <strong>API</strong> to route tasks from <strong>customer ID</strong> and <strong>tax year</strong> inputs.</li>
+            <li><strong>Integrated</strong> automations with <strong>Salesforce CRM</strong> so tax file status, logs, and customer records update in real time.</li>
+            <li><strong>Implemented</strong> error handling and logging with <strong>MongoDB</strong> and <strong>CloudWatch</strong> for monitoring, debugging, and audit trails.</li>
+            <li><strong>Engineered</strong> timeout and batch-processing rules to avoid session loss on large document uploads.</li>
+            <li><strong>Automated</strong> data extraction and validation with <strong>AI models</strong> (<strong>Gemini</strong> / <strong>OpenAI</strong>) for tax-related documents.</li>
+            <li><strong>Secured</strong> credentials with <strong>AWS Secrets Manager</strong> instead of env-only config for production.</li>
+            <li><strong>Built and tested</strong> <strong>API Gateway</strong> + <strong>Lambda</strong> integrations to trigger automations over secure endpoints.</li>
+            <li><strong>Collaborated</strong> with senior developers on <strong>Salesforce Flow</strong> integrations and production debugging.</li>
+          </ul>
+          <div class="tag-list">
+            <span>Python</span>
+            <span>Playwright</span>
+            <span>AWS Lambda</span>
+            <span>ECS Fargate</span>
+            <span>API Gateway</span>
+            <span>MongoDB</span>
+            <span>CloudWatch</span>
+            <span>Secrets Manager</span>
+            <span>Salesforce</span>
+            <span>Gemini</span>
+            <span>OpenAI</span>
+          </div>
+        </article>
+
+        <article class="timeline-card card reveal">
+          <div class="timeline-header">
+            <h3>Software Engineer Intern</h3>
+            <p>Gamage Recruiters, remote, 6 months</p>
+          </div>
+          <p>
+            Internship as a full-stack developer on two production-style products: the
+            <strong>Client Management System (CMS)</strong> and the <strong>Financial Management System (FMS)</strong>.
+            Work spanned UI mockups, database design, APIs, and shipping with the rest of the team.
+          </p>
+          <ul class="list-points">
+            <li><strong>Led a six-person group</strong> that owned the CMS task-management slice end to end.</li>
+            <li><strong>Built</strong> responsive <strong>React</strong> screens from <strong>Figma</strong> hi-fi specs.</li>
+            <li><strong>Shipped</strong> <strong>Node</strong> and <strong>Express</strong> REST services with a layout that stayed readable as features grew.</li>
+            <li><strong>Designed</strong> normalized <strong>MySQL</strong> schemas, CRUD paths, and a few query passes where things slowed down.</li>
+            <li><strong>Worked</strong> on a four-person integration crew to keep CMS and FMS modules aligned on <strong>GitHub</strong>.</li>
+            <li><strong>Matched</strong> front-end payloads to the same API contracts so cross-module calls did not drift.</li>
+            <li><strong>Joined</strong> sprint demos, peer reviews, and an Agile release rhythm; merges were expected to be release-safe.</li>
+          </ul>
+          <div class="tag-list">
+            <span>React.js</span>
+            <span>Node.js</span>
+            <span>Express.js</span>
+            <span>MySQL</span>
+            <span>REST APIs</span>
+            <span>Figma</span>
+            <span>GitHub</span>
+            <span>Agile</span>
+          </div>
+          <div class="project-actions">
+            <a class="link-pill" href="https://github.com/AsardeenAzees/CMS_Responsive_FrontEnd_And_BackEnd_MyGroupPart_Integrated.git" target="_blank" rel="noopener noreferrer"><i class="bx bxl-github"></i> CMS</a>
+            <a class="link-pill" href="https://github.com/AsardeenAzees/Payment-Management-System-Intern-P1.git" target="_blank" rel="noopener noreferrer"><i class="bx bxl-github"></i> FMS</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Work samples</p>
+          <h2>Projects</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card project-card--featured card reveal">
+            <div class="project-media">
+              <span class="project-badge">Featured</span>
+              <img src="./assets/img/Projects_Images/RP_Automation_DashBoard.png" alt="Smart greenhouse dashboard" width="800" height="500" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3>Smart Greenhouse Decision Support System</h3>
+              <p class="project-meta">Final year research, June 2024 to June 2025</p>
+              <div class="project-body">
+                <p>
+                  IoT plus ML for tomato greenhouses: live sensors, models for when to water, hardware to run pumps and fans,
+                  and a web dashboard to watch and override everything.
+                </p>
+                <details class="project-details">
+                  <summary>Objectives and team split</summary>
+                  <div class="project-details-body">
+                    <p><strong>Goals:</strong> use sensor data plus ML to time irrigation; automate irrigation, fans, vents, and alarms; give growers a simple web UI for logs and manual control.</p>
+                    <p><strong>Team pieces:</strong> IoT and watering tuning; fertilizer timing; harvest timing; disease detection and treatment hints.</p>
+                  </div>
+                </details>
+              </div>
+              <div class="tag-list">
+                <span>Python</span><span>Flask</span><span>TensorFlow</span><span>Scikit-learn</span><span>Firebase</span><span>Arduino</span><span>ESP32</span><span>Sensors</span><span>OLED</span><span>Relays</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span>
+              </div>
+              <div class="project-actions">
+                <a class="link-pill" href="https://greenbrainak.netlify.app/" target="_blank" rel="noopener noreferrer"><i class="bx bx-link-external"></i> Live site</a>
               </div>
             </div>
-          </div>
+          </article>
 
-          <!-- Social media icons -->
-          <div class="home_social">
+          <article class="project-card card reveal">
+            <div class="project-media">
+              <img src="./assets/img/Projects_Images/OnlineEventTicketing.png" alt="Online event ticketing application" loading="lazy" width="800" height="500">
+            </div>
+            <div class="project-content">
+              <h3>Online Event Ticketing Web Application</h3>
+              <p class="project-meta">Role: Full-Stack Developer</p>
+              <div class="project-body">
+                <p>
+                  Ticketing stack for a large Sri Lankan events company. Admin, organizer, and customer roles; auth; event CRUD;
+                  checkout with QR e-tickets; loyalty and discounts; sales and user reporting.
+                </p>
+              </div>
+              <div class="tag-list">
+                <span>ASP.NET Core MVC 8.0</span><span>C#</span><span>Entity Framework Core</span><span>MySQL</span><span>ASP.NET Identity</span><span>Bootstrap</span><span>jQuery</span><span>QRCoder</span>
+              </div>
+              <div class="project-actions">
+                <span class="link-pill link-pill--muted">Repository coming soon</span>
+              </div>
+            </div>
+          </article>
 
-            <a href="https://github.com/AsardeenAzees" class="home_social-icon" data-aos="fade-down" target="_blank"><i
-                class="bx bxl-github"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <article class="project-card card reveal">
+            <div class="project-media">
+              <img src="./assets/img/Projects_Images/BakeryManagement.png" alt="Bakery management web application" loading="lazy" width="800" height="500">
+            </div>
+            <div class="project-content">
+              <h3>Bakery Management Web Application</h3>
+              <p class="project-meta">Role: Full-Stack Developer</p>
+              <div class="project-body">
+                <p>
+                  Bakery ops app with roles for admin, staff, and customers. Covers catalog, orders, stock, and simple sales views.
+                </p>
+              </div>
+              <div class="tag-list">
+                <span>Laravel</span><span>PHP</span><span>MySQL</span><span>Blade</span><span>Bootstrap</span><span>JavaScript</span>
+              </div>
+              <div class="project-actions">
+                <span class="link-pill link-pill--muted">Repository coming soon</span>
+              </div>
+            </div>
+          </article>
 
-            <a href="https://www.linkedin.com/in/asardeen-azees/" class="home_social-icon" data-aos="fade-down"
-              data-aos-delay="250" target="_blank"><i
-                class="bx bxl-linkedin-square"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <article class="project-card card reveal">
+            <div class="project-media">
+              <img src="./assets/img/Projects_Images/cms-inter-pro-2.png" alt="Client management system" loading="lazy" width="800" height="500">
+            </div>
+            <div class="project-content">
+              <h3>Client Management System (CMS)</h3>
+              <p class="project-meta">Internship, web developer and group lead</p>
+              <div class="project-body">
+                <p>
+                  Group lead on the internship CMS. I owned the task-management slice: responsive admin and staff views,
+                  APIs, and DB work so status updates showed up without a refresh dance.
+                </p>
+              </div>
+              <div class="tag-list">
+                <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MySQL</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <div class="project-actions">
+                <a class="link-pill" href="https://github.com/AsardeenAzees/CMS_Responsive_FrontEnd_And_BackEnd_MyGroupPart_Integrated.git" target="_blank" rel="noopener noreferrer"><i class="bx bxl-github"></i> Source</a>
+              </div>
+            </div>
+          </article>
 
+          <article class="project-card card reveal">
+            <div class="project-media">
+              <img src="./assets/img/Projects_Images/ITPM_ShoppingMall_App_EZY-mall.png" alt="Ezy-Mall shopping mall application" loading="lazy" width="800" height="500">
+            </div>
+            <div class="project-content">
+              <h3>Shopping Mall Web Application (Ezy-Mall)</h3>
+              <p class="project-meta">ITPM, year 3 semester 2</p>
+              <div class="project-body">
+                <p>
+                  MERN mall app (Ezy-Mall): split admin and shopper flows, shop and product CRUD, live parking view, and a shared chat room.
+                </p>
+              </div>
+              <div class="tag-list">
+                <span>MongoDB</span><span>Express.js</span><span>React.js</span><span>Node.js</span><span>CSS</span><span>HTML</span><span>APIs</span>
+              </div>
+              <div class="project-actions">
+                <a class="link-pill" href="https://github.com/AsardeenAzees/ITPM.git" target="_blank" rel="noopener noreferrer"><i class="bx bxl-github"></i> Source</a>
+              </div>
+            </div>
+          </article>
 
-            <a href="https://web.facebook.com/kijan.mohamed.7" class="home_social-icon" data-aos="fade-down"
-              data-aos-delay="300" target="_blank"><i
-                class="bx bxl-facebook-circle"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <article class="project-card card reveal">
+            <div class="project-media">
+              <img src="./assets/img/Projects_Images/PAF_SocialMedia.png" alt="Social media fitness application" loading="lazy" width="800" height="500">
+            </div>
+            <div class="project-content">
+              <h3>Social Media Fitness Web Application</h3>
+              <p class="project-meta">PAF, year 3 semester 2</p>
+              <div class="project-body">
+                <p>
+                  Fitness social app: profiles, workouts, and feeds backed by APIs. Responsive layout; GitHub for source control.
+                </p>
+              </div>
+              <div class="tag-list">
+                <span>Spring Boot</span><span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>CSS</span><span>HTML</span><span>Git</span><span>GitHub</span>
+              </div>
+              <div class="project-actions">
+                <a class="link-pill" href="https://github.com/PAF-IT3030/paf-assignment-2024-jun_we_15_peak_performers.git" target="_blank" rel="noopener noreferrer"><i class="bx bxl-github"></i> Source</a>
+              </div>
+            </div>
+          </article>
 
-            <a href="https://instagram.com/hijan_azar?igshid=YTQwZjQ0NmI0OA==" class="home_social-icon"
-              data-aos="fade-down" data-aos-delay="350" target="_blank"><i class="bx bxl-instagram"></i></a>
+          <article class="project-card card reveal">
+            <div class="project-media">
+              <img src="./assets/img/Projects_Images/HCI_Hi-Fi_Prototyoe.png" alt="Hi-fi prototype UI/UX project" loading="lazy" width="800" height="500">
+            </div>
+            <div class="project-content">
+              <h3>Hi-Fi Prototype Development (UI/UX)</h3>
+              <p class="project-meta">HCI, year 3 semester 1</p>
+              <div class="project-body">
+                <p>
+                  HCI module: led frontend and UX on a redesign brief. Ran usability checks on an existing flow and rebuilt the hi-fi in Figma.
+                </p>
+              </div>
+              <div class="tag-list">
+                <span>Figma</span><span>UI/UX</span><span>Prototyping</span>
+              </div>
+              <div class="project-actions">
+                <a class="link-pill" href="https://www.figma.com/file/G6pydDYMhXyAUvH0tIh32C/Untitled?type=design&amp;node-id=1%3A763&amp;mode=design&amp;t=EwEnRYvoHkADCaun-1" target="_blank" rel="noopener noreferrer"><i class="bx bx-palette"></i> Figma</a>
+              </div>
+            </div>
+          </article>
 
-          </div>
+          <article class="project-card card reveal">
+            <div class="project-media">
+              <img src="./assets/img/Projects_Images/ITP_E-Commese_App.png" alt="E-commerce shopping application" loading="lazy" width="800" height="500">
+            </div>
+            <div class="project-content">
+              <h3>E-Commerce Shopping Application</h3>
+              <p class="project-meta">ITP, year 2 semester 2</p>
+              <div class="project-body">
+                <p>
+                  MERN e-commerce build with the team: cart flow, catalog glue, and wiring front to back so demos stayed stable.
+                </p>
+              </div>
+              <div class="tag-list">
+                <span>MongoDB</span><span>Express.js</span><span>React.js</span><span>Node.js</span><span>CSS</span><span>HTML</span><span>MERN</span>
+              </div>
+              <div class="project-actions">
+                <a class="link-pill" href="https://github.com/AsardeenAzees/Online_Food_City_OFM.git" target="_blank" rel="noopener noreferrer"><i class="bx bxl-github"></i> Source</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card card reveal">
+            <div class="project-media">
+              <img src="./assets/img/Projects_Images/MAD_Finanical_App.png" alt="Financial management mobile app" loading="lazy" width="800" height="500">
+            </div>
+            <div class="project-content">
+              <h3>Financial Management App</h3>
+              <p class="project-meta">MAD, year 2 semester 2</p>
+              <div class="project-body">
+                <p>
+                  Kotlin Android app for personal finance: Firebase backend, expense and income tracking, simple budgets.
+                </p>
+              </div>
+              <div class="tag-list">
+                <span>Android Studio</span><span>Kotlin</span><span>Firebase</span>
+              </div>
+              <div class="project-actions">
+                <span class="link-pill link-pill--muted">Repository coming soon</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card card reveal">
+            <div class="project-media">
+              <img src="./assets/img/Projects_Images/OOP_Wehicle_Service_webapp.png" alt="Vehicle service management web app" loading="lazy" width="800" height="500">
+            </div>
+            <div class="project-content">
+              <h3>Online Vehicle Service Management System</h3>
+              <p class="project-meta">OOP, year 2 semester 1</p>
+              <div class="project-body">
+                <p>
+                  Vehicle service booking in Java servlets plus plain JS, HTML, CSS, and MySQL. Book slots, see history, keep the shop side organized.
+                </p>
+              </div>
+              <div class="tag-list">
+                <span>Servlets</span><span>Java</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>MySQL</span>
+              </div>
+              <div class="project-actions">
+                <span class="link-pill link-pill--muted">Repository coming soon</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card card reveal">
+            <div class="project-media">
+              <img src="./assets/img/Projects_Images/IWT_Web_Ap.png" alt="Internet and web technologies project" loading="lazy" width="800" height="500">
+            </div>
+            <div class="project-content">
+              <h3>Web Application</h3>
+              <p class="project-meta">IWT, year 1 semester 2</p>
+              <div class="project-body">
+                <p>First-year web coursework: small full stack with PHP, MySQL, and front-end basics.</p>
+              </div>
+              <div class="tag-list">
+                <span>JavaScript</span><span>HTML</span><span>PHP</span><span>CSS</span><span>MySQL</span>
+              </div>
+              <div class="project-actions">
+                <a class="link-pill" href="https://github.com/AsardeenAzees/iwt_project_Y1_S2.git" target="_blank" rel="noopener noreferrer"><i class="bx bxl-github"></i> Source</a>
+              </div>
+            </div>
+          </article>
         </div>
-      </div>
-
-    </section>
-
-
-
-    <!-- ABOUT SECTION -->
-    <section class="about section" id="about">
-      <h2 class="section-title" data-aos="fade-down">About</h2>
-
-      <div class="about_container bd_grid">
-        <div class="about_img" data-aos="fade-down" data-aos-delay="50">
-          <img src="./assets/img/profile.svg" alt="profile image" />
-        </div>
-
-        <div>
-          <h2 class="about_subtitle" data-aos="fade-down" data-aos-delay="350">
-            I'm Asardeen Azees
-          </h2>
-          <p class="about_text" data-aos="fade-down" data-aos-delay="450" style="text-align: justify;">
-            I am a BSc (Hons) in Information Technology graduate, specializing in Information
-            Technology, with strong hands-on experience in designing and developing reliable software solutions. I have
-            worked on enterprise-level systems, full-stack web applications, and process automation projects. I am
-            skilled in problem-solving, system design, and delivering high-quality solutions that meet business
-            requirements. I adapt quickly to new technologies and work effectively in team-oriented, fast-paced
-            environments. I am eager to contribute my skills and grow as a software engineer in a professional
-            organization.
-          </p>
-        </div>
-
-        <!--Education-->
-        <div>
-          <h2 class="about_subtitle" data-aos="fade-down" data-aos-delay="350">
-            Education
-          </h2>
-          <p class="about_text" data-aos="fade-down" data-aos-delay="450" style="text-align: justify;">
-            <b>Sri Lanka Institute of Information Technology (SLIIT)</b><br /><br />
-            Degree: <b>BSc (Hons) in Information Technology</b><br />
-            Graduation: <b>June 2025</b><br /><br />
-            I have successfully completed my BSc (Hons) in Information Technology, gaining a strong foundation in
-            software development, database management, and system analysis. During my studies, I explored various areas
-            of IT including web and mobile application development, full-stack programming, and enterprise system
-            integration. I am eager to apply these skills to real-world projects and contribute effectively to
-            professional software development environments.
-          </p>
-        </div>
-        <div class="about_img" data-aos="fade-down" data-aos-delay="650">
-          <br /><br />
-          <img src="./assets/img/sliit.jpg" alt="SLIIT logo" style="border-radius: 8px;" />
-        </div>
-
-      </div>
-
-
-    </section>
-
-
-    <!-- SKILLS SECTION -->
-    <section class="skills section" id="skills">
-      <h2 class="section-title" data-aos="fade-down">My Skills</h2>
-
-      <div class="skills_container bd_grid">
-        <div>
-
-          <!-- SKILLS C# -->
-          <div class="skills_data" data-aos="fade-right">
-            <div class="skills_name">
-              <i class='bx bx-code-alt skill_icon'></i>
-              <span class="skill_name">C#</span>
-            </div>
-            <div><span class="skill_percentage">85%</span></div>
-            <div class="skill_bar skill_csharp"></div>
-          </div>
-
-          <!-- SKILLS ASP.NET Core -->
-          <div class="skills_data" data-aos="fade-left">
-            <div class="skills_name">
-              <i class='bx bx-layer skill_icon'></i>
-              <span class="skill_name">ASP.NET Core / MVC</span>
-            </div>
-            <div><span class="skill_percentage">80%</span></div>
-            <div class="skill_bar skill_dotnet"></div>
-          </div>
-
-          <!-- SKILLS MySQL -->
-          <div class="skills_data" data-aos="fade-right">
-            <div class="skills_name">
-              <i class='bx bxs-data skill_icon'></i>
-              <span class="skill_name">MySQL</span>
-            </div>
-            <div><span class="skill_percentage">80%</span></div>
-            <div class="skill_bar skill_mysql"></div>
-          </div>
-
-          <!-- SKILLS SQL Server -->
-          <div class="skills_data" data-aos="fade-left">
-            <div class="skills_name">
-              <i class='bx bx-server skill_icon'></i>
-              <span class="skill_name">SQL Server</span>
-            </div>
-            <div><span class="skill_percentage">75%</span></div>
-            <div class="skill_bar skill_sqlserver"></div>
-          </div>
-
-          <!-- SKILLS Laravel -->
-          <div class="skills_data" data-aos="fade-right">
-            <div class="skills_name">
-              <i class='bx bxl-laravel skill_icon'></i>
-              <span class="skill_name">Laravel</span>
-            </div>
-            <div><span class="skill_percentage">75%</span></div>
-            <div class="skill_bar skill_laravel"></div>
-          </div>
-
-
-          <!-- SKILLS React JS -->
-          <div class="skills_data" data-aos="fade-left">
-            <div class="skills_name">
-              <i class='bx bxl-react skill_icon'></i>
-              <span class="skill_name">React JS</span>
-            </div>
-
-            <div><span class="skill_percentage">85%</span></div>
-
-            <div class="skill_bar skill_react"></div>
-          </div>
-
-
-          <!-- SKILLS Node JS -->
-          <div class="skills_data" data-aos="fade-right">
-            <div class="skills_name">
-              <i class='bx bxl-nodejs skill_icon'></i>
-              <span class="skill_name">Node JS</span>
-            </div>
-
-            <div><span class="skill_percentage">85%</span></div>
-
-            <div class="skill_bar skill_Node"></div>
-          </div>
-
-          <!-- SKILLS Express JS & Mongo DB -->
-          <div class="skills_data" data-aos="fade-left">
-            <div class="skills_name">
-              <i class='bx bxl-mongodb skill_icon'></i>
-              <span class="skill_name">Express JS & Mongo DB</span>
-            </div>
-
-            <div><span class="skill_percentage">80%</span></div>
-
-            <div class="skill_bar skill_express_mongo"></div>
-          </div>
-
-          <!-- SKILLS HTML -->
-          <div class="skills_data" data-aos="fade-right">
-            <div class="skills_name">
-              <i class="bx bxl-html5 skill_icon"></i>
-              <span class="skill_name">HTML5</span>
-            </div>
-
-            <div><span class="skill_percentage">95%</span></div>
-
-            <div class="skill_bar skill_html"></div>
-          </div>
-
-          <!-- SKILLS CSS -->
-          <div class="skills_data" data-aos="fade-left" data-aos-delay="250">
-            <div class="skills_name">
-              <i class="bx bxl-css3 skill_icon"></i>
-              <span class="skill_name">CSS3</span>
-            </div>
-
-            <div><span class="skill_percentage">85%</span></div>
-
-            <div class="skill_bar skill_css"></div>
-          </div>
-
-          <!-- SKILLS JavaScript -->
-          <div class="skills_data" data-aos="fade-right" data-aos-delay="250">
-            <div class="skills_name">
-              <i class="bx bxl-javascript skill_icon"></i>
-              <span class="skill_name">JavaScript</span>
-            </div>
-
-            <div><span class="skill_percentage">85%</span></div>
-
-            <div class="skill_bar skill_js"></div>
-          </div>
-
-          <!-- SKILLS Python -->
-          <div class="skills_data" data-aos="fade-left" data-aos-delay="250">
-            <div class="skills_name">
-              <i class='bx bxl-python skill_icon'></i>
-              <span class="skill_name">Python</span>
-            </div>
-
-            <div><span class="skill_percentage">70%</span></div>
-
-            <div class="skill_bar skill_python"></div>
-          </div>
-
-          <!-- SKILLS UI/UX -->
-          <div class="skills_data" data-aos="fade-right" data-aos-delay="250">
-            <div class="skills_name">
-              <i class="bx bxs-paint skill_icon"></i>
-              <span class="skill_name">UI / UX</span>
-            </div>
-
-            <div><span class="skill_percentage">90%</span></div>
-
-            <div class="skill_bar skill_ui"></div>
-          </div>
-
-          <!-- SKILLS Git -->
-          <div class="skills_data" data-aos="fade-left">
-            <div class="skills_name">
-              <i class='bx bxl-git skill_icon'></i>
-              <span class="skill_name">Git</span>
-            </div>
-
-            <div><span class="skill_percentage">80%</span></div>
-
-            <div class="skill_bar skill_git"></div>
-          </div>
-
-          <!-- SKILLS Spring Boot -->
-          <div class="skills_data" data-aos="fade-left">
-            <div class="skills_name">
-              <i class='bx bxl-java skill_icon'></i>
-              <span class="skill_name">Spring Boot</span>
-            </div>
-            <div><span class="skill_percentage">80%</span></div>
-            <div class="skill_bar skill_springboot"></div>
-          </div>
-
-
-        </div>
-
-        <!-- Right Side -->
-        <div>
-
-          <!-- SKILLS Microservices Architecture -->
-          <div class="skills_data" data-aos="fade-right">
-            <div class="skills_name">
-              <i class='bx bx-cube-alt skill_icon'></i>
-              <span class="skill_name">Microservices Architecture</span>
-            </div>
-            <div><span class="skill_percentage">75%</span></div>
-            <div class="skill_bar skill_microservices"></div>
-          </div>
-
-          <!-- SKILLS Salesforce -->
-          <div class="skills_data" data-aos="fade-left">
-            <div class="skills_name">
-              <i class='bx bx-cloud skill_icon'></i>
-              <span class="skill_name">Salesforce</span>
-            </div>
-            <div><span class="skill_percentage">70%</span></div>
-            <div class="skill_bar skill_salesforce"></div>
-          </div>
-
-          <!-- SKILLS Playwright -->
-          <div class="skills_data" data-aos="fade-right">
-            <div class="skills_name">
-              <i class='bx bx-bug skill_icon'></i>
-              <span class="skill_name">Playwright Automation</span>
-            </div>
-            <div><span class="skill_percentage">70%</span></div>
-            <div class="skill_bar skill_playwright"></div>
-          </div>
-
-          <!-- SKILLS AI / ML -->
-          <div class="skills_data" data-aos="fade-left">
-            <div class="skills_name">
-              <i class='bx bx-brain skill_icon'></i>
-              <span class="skill_name">AI / ML Integration</span>
-            </div>
-            <div><span class="skill_percentage">75%</span></div>
-            <div class="skill_bar skill_ai"></div>
-          </div>
-
-          <!-- SKILLS Agile Methodologies -->
-          <div class="skills_data" data-aos="fade-right">
-            <div class="skills_name">
-              <i class='bx bx-trending-up skill_icon'></i>
-              <span class="skill_name">Agile Methodologies</span>
-            </div>
-            <div><span class="skill_percentage">75%</span></div>
-            <div class="skill_bar skill_agile"></div>
-          </div>
-
-          <!-- SKILLS Software Testing -->
-          <div class="skills_data" data-aos="fade-left">
-            <div class="skills_name">
-              <i class='bx bx-check-double skill_icon'></i>
-              <span class="skill_name">Software Testing</span>
-            </div>
-            <div><span class="skill_percentage">65%</span></div>
-            <div class="skill_bar skill_testing"></div>
-          </div>
-
-          <!-- SKILLS Docker -->
-          <div class="skills_data" data-aos="fade-right">
-            <div class="skills_name">
-              <i class='bx bxl-docker skill_icon'></i>
-              <span class="skill_name">Docker</span>
-            </div>
-
-            <div><span class="skill_percentage">60%</span></div>
-
-            <div class="skill_bar skill_docker"></div>
-          </div>
-
-          <!-- SKILLS TypeScript -->
-          <div class="skills_data" data-aos="fade-left">
-            <div class="skills_name">
-              <i class='bx bxl-typescript skill_icon'></i>
-              <span class="skill_name">TypeScript</span>
-            </div>
-
-            <div><span class="skill_percentage">70%</span></div>
-
-            <div class="skill_bar skill_typescript"></div>
-          </div>
-
-          <!-- SKILLS Angular -->
-          <div class="skills_data" data-aos="fade-right">
-            <div class="skills_name">
-              <i class='bx bxl-angular skill_icon'></i>
-              <span class="skill_name">Angular</span>
-            </div>
-
-            <div><span class="skill_percentage">75%</span></div>
-
-            <div class="skill_bar skill_angular"></div>
-          </div>
-
-          <!-- SKILLS AWS -->
-          <div class="skills_data" data-aos="fade-left">
-            <div class="skills_name">
-              <i class='bx bxl-amazon skill_icon'></i>
-              <span class="skill_name">AWS</span>
-            </div>
-
-            <div><span class="skill_percentage">65%</span></div>
-
-            <div class="skill_bar skill_aws"></div>
-          </div>
-
-          <!-- SKILLS SQL -->
-          <div class="skills_data" data-aos="fade-right">
-            <div class="skills_name">
-              <i class='bx bxs-data skill_icon'></i>
-              <span class="skill_name">SQL</span>
-            </div>
-
-            <div><span class="skill_percentage">60%</span></div>
-
-            <div class="skill_bar skill_sql"></div>
-          </div>
-
-          <!-- SKILLS DevOps -->
-          <div class="skills_data" data-aos="fade-left">
-            <div class="skills_name">
-              <i class='bx bxl-dev-to skill_icon'></i>
-              <span class="skill_name">DevOps</span>
-            </div>
-
-            <div><span class="skill_percentage">75%</span></div>
-
-            <div class="skill_bar skill_devops"></div>
-          </div>
-
-          <!-- SKILLS Figma -->
-          <div class="skills_data" data-aos="fade-right">
-            <div class="skills_name">
-              <i class='bx bxl-figma skill_icon'></i>
-              <span class="skill_name">Figma</span>
-            </div>
-
-            <div><span class="skill_percentage">90%</span></div>
-
-            <div class="skill_bar skill_figma"></div>
-          </div>
-
-          <!-- SKILLS Java -->
-          <div class="skills_data" data-aos="fade-left">
-            <div class="skills_name">
-              <i class='bx bxl-java skill_icon'></i>
-              <span class="skill_name">Java</span>
-            </div>
-
-            <div><span class="skill_percentage">80%</span></div>
-
-            <div class="skill_bar skill_java"></div>
-          </div>
-
-          <!-- SKILLS REST APIs -->
-          <div class="skills_data" data-aos="fade-right">
-            <div class="skills_name">
-              <i class='bx bx-network-chart skill_icon'></i>
-              <span class="skill_name">REST APIs</span>
-            </div>
-
-            <div><span class="skill_percentage">85%</span></div>
-
-            <div class="skill_bar skill_rest"></div>
-          </div>
-        </div>
-      </div>
       </div>
     </section>
 
-    <!-- EXPERIENCE SECTION -->
-    <section class="about section" id="experience">
-      <h2 class="section-title" data-aos="fade-down">Experience</h2>
+    <section class="section" id="certificates">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Learning</p>
+          <h2>Certificates</h2>
+        </div>
 
-      <div class="experience_container bd_grid">
+        <div class="certificate-grid">
+          <a class="certificate-card card reveal" href="https://code.sliit.org/certificates/4vyeytqbrf" target="_blank" rel="noopener noreferrer"><img src="./assets/img/sliit_aiml_stage2.png" alt="SLIIT AI/ML Stage 2 certificate" loading="lazy" width="400" height="280"><span>SLIIT AI/ML Stage 2</span></a>
+          <a class="certificate-card card reveal" href="https://code.sliit.org/certificates/rg5cbejkeu" target="_blank" rel="noopener noreferrer"><img src="./assets/img/sliit_aiml_stage1.png" alt="SLIIT AI/ML Stage 1 certificate" loading="lazy" width="400" height="280"><span>SLIIT AI/ML Stage 1</span></a>
+          <a class="certificate-card card reveal" href="https://coursera.org/verify/ET9ZY9LZZXJ5" target="_blank" rel="noopener noreferrer"><img src="./assets/img/AWS_Badge_Certificate.png" alt="AWS badge certificate" loading="lazy" width="400" height="280"><span>AWS Badge Certificate</span></a>
+          <a class="certificate-card card reveal" href="https://coursera.org/verify/ET9ZY9LZZXJ5" target="_blank" rel="noopener noreferrer"><img src="./assets/img/Google UX Certificate_05.png" alt="Google UX Certificate 05" loading="lazy" width="400" height="280"><span>Google UX Certificate 05</span></a>
+          <a class="certificate-card card reveal" href="https://coursera.org/verify/G2TBQXJUWWCF" target="_blank" rel="noopener noreferrer"><img src="./assets/img/Google UX Certificate_03.png" alt="Google UX Certificate 03" loading="lazy" width="400" height="280"><span>Google UX Certificate 03</span></a>
+          <a class="certificate-card card reveal" href="https://coursera.org/verify/899ENQ5CW7GE" target="_blank" rel="noopener noreferrer"><img src="./assets/img/Google UX Certificate_02.png" alt="Google UX Certificate 02" loading="lazy" width="400" height="280"><span>Google UX Certificate 02</span></a>
+          <a class="certificate-card card reveal" href="https://coursera.org/verify/3Y437NGEFVYN" target="_blank" rel="noopener noreferrer"><img src="./assets/img/Google UX Certificate 01.png" alt="Google UX Certificate 01" loading="lazy" width="400" height="280"><span>Google UX Certificate 01</span></a>
+          <a class="certificate-card card reveal" href="https://learn.mongodb.com/c/U8n2dSa3TSeYmLWogRKFvg" target="_blank" rel="noopener noreferrer"><img src="./assets/img/MongoDB _Certificate.png" alt="MongoDB certificate" loading="lazy" width="400" height="280"><span>MongoDB Certificate</span></a>
+          <a class="certificate-card card reveal" href="https://www.sololearn.com/certificates/CC-LU5SQ7PB" target="_blank" rel="noopener noreferrer"><img src="./assets/img/Java Intermediate - Solo Learn.png" alt="Java Intermediate SoloLearn certificate" loading="lazy" width="400" height="280"><span>Java Intermediate</span></a>
+          <a class="certificate-card card reveal" href="https://www.sololearn.com/certificates/CC-BAPBQHDR" target="_blank" rel="noopener noreferrer"><img src="./assets/img/Introduction Java -  SoloLearn.png" alt="Introduction to Java SoloLearn certificate" loading="lazy" width="400" height="280"><span>Introduction to Java</span></a>
+          <a class="certificate-card card reveal" href="https://www.sololearn.com/certificates/CC-RFO5K2QG" target="_blank" rel="noopener noreferrer"><img src="./assets/img/Into Java Script - soloLearn.png" alt="Introduction to JavaScript SoloLearn certificate" loading="lazy" width="400" height="280"><span>Introduction to JavaScript</span></a>
+          <article class="certificate-card card reveal"><img src="./assets/img/html - gread learning.jpg" alt="HTML Great Learning certificate" loading="lazy" width="400" height="280"><span>HTML Great Learning</span></article>
+          <a class="certificate-card card reveal" href="https://verify.mygreatlearning.com/verify/NRXTCXTX" target="_blank" rel="noopener noreferrer"><img src="./assets/img/Java Script Project Certifivate - Gread Learning.png" alt="JavaScript project Great Learning certificate" loading="lazy" width="400" height="280"><span>JavaScript Project Certificate</span></a>
+        </div>
+      </div>
+    </section>
 
-        <!-- Experience Card -->
-        <div class="experience_card" data-aos="fade-up">
-          <div class="experience_icon">
-            <i class='bx bx-code-block'></i>
-          </div>
-          <div class="experience_content">
-            <h3 class="experience_role">Software Engineer Intern</h3>
-            <h4 class="experience_company">Gamage Recruiters · Remote · 6 Months</h4>
-            <p class="experience_desc">
-              During my internship at Gamage Recruiters, I worked as a full-stack developer on two enterprise-grade
-              systems:
-              the <strong>Client Management System (CMS)</strong> and the <strong>Financial Management System
-                (FMS)</strong>.
-              I was involved in the full software lifecycle — from UI prototyping and database design to API integration
-              and team collaboration.
-            </p>
-            <ul class="experience_points">
-              <li><strong>Led a sub-team of 6 developers</strong> to design and build the Task Management component of
-                the CMS application.</li>
-              <li>Implemented dynamic and responsive UIs using <strong>React.js</strong> based on Hi-Fi <strong>Figma
-                  prototypes</strong>.</li>
-              <li>Developed RESTful backend services using <strong>Node.js</strong> and <strong>Express.js</strong>,
-                ensuring clean architecture and scalable logic.</li>
-              <li>Designed and normalized <strong>MySQL database schemas</strong>, implemented CRUD operations, and
-                optimized performance.</li>
-              <li>Collaborated within a 4-member <strong>integration team</strong> to manage and sync modules across
-                both CMS and FMS using <strong>GitHub</strong>.</li>
-              <li>Ensured seamless front-end and back-end connectivity across modules using consistent data structures
-                and APIs.</li>
-              <li>Participated in sprint reviews, peer code reviews, and Agile-based development cycles to deliver
-                production-quality code.</li>
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Reach out</p>
+          <h2>Contact</h2>
+        </div>
+
+        <div class="contact-grid">
+          <article class="card reveal">
+            <h3>Get in touch</h3>
+            <ul class="contact-list">
+              <li><strong>Name:</strong> Asardeen Azees</li>
+              <li><strong>Email:</strong> <a href="mailto:azeesasardeen@gmail.com">azeesasardeen@gmail.com</a></li>
+              <li><strong>Phone:</strong> <a href="tel:+94758396064">(+94) 075-8396064</a>, <a href="tel:+94768437336">(+94) 076-8437336</a></li>
             </ul>
-            <div class="experience_tech">
-              <span>React.js</span>
-              <span>Node.js</span>
-              <span>Express.js</span>
-              <span>MySQL</span>
-              <span>REST APIs</span>
-              <span>Figma</span>
-              <span>GitHub</span>
-              <span>Agile</span>
-            </div>
-            <div class="experience_links">
-              <a href="https://github.com/AsardeenAzees/CMS_Responsive_FrontEnd_And_BackEnd_MyGroupPart_Integrated.git"
-                target="_blank">CMS GitHub</a>
-              <a href="https://github.com/AsardeenAzees/Payment-Management-System-Intern-P1.git" target="_blank">FMS
-                GitHub</a>
-            </div>
-          </div>
-        </div>
+            <ul class="social-list" aria-label="Contact social links">
+              <li><a href="https://github.com/IT21231896" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bx bxl-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/asardeen-azees/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bx bxl-linkedin-square"></i></a></li>
+              <li><a href="https://web.facebook.com/kijan.mohamed.7" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bx bxl-facebook-circle"></i></a></li>
+              <li><a href="https://instagram.com/hijan_azar?igshid=YTQwZjQ0NmI0OA==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bx bxl-instagram"></i></a></li>
+            </ul>
+          </article>
 
+          <article class="card reveal">
+            <h3>Send a message</h3>
+            <form id="contact-form" class="contact-form" novalidate>
+              <label>
+                Name
+                <input type="text" name="from_name" placeholder="Your name" autocomplete="name" required>
+              </label>
+              <label>
+                Email
+                <input type="email" name="from_email" placeholder="your@email.com" autocomplete="email" required>
+              </label>
+              <label>
+                Message
+                <textarea name="message" rows="6" placeholder="What would you like to talk about?" required></textarea>
+              </label>
+              <button type="submit" class="btn btn-primary" id="send-button">Send Message</button>
+              <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </article>
+        </div>
       </div>
     </section>
-
-
-    <!-- PROJECTS SECTION -->
-    <section class="about section" id="projects">
-      <h2 class="section-title" data-aos="fade-down">Projects</h2>
-
-
-
-      <div class="about_container bd_grid" style="text-align: justify;">
-
-        <!-- 4th Year Research Project -->
-        <div>
-          <h2 class="about_subtitle" data-aos="fade-down" data-aos-delay="350">
-            Smart Greenhouse Decision Support System
-          </h2>
-          <p class="about_text" data-aos="fade-down" data-aos-delay="450">
-            Module: <b>Final Year Research Project</b><br />
-            Duration: <b>June 2024 – June 2025</b><br /><br />
-
-            Description: <b>
-              Designed and developed a smart, IoT-based decision support system to enhance tomato cultivation through
-              precise environmental monitoring and intelligent automation.
-              The system integrates real-time data collection, ML-driven irrigation prediction, automated control
-              mechanisms, and a user-friendly dashboard for monitoring and control.
-            </b><br /><br />
-
-            <u><b>Main Objectives:</b></u><br />
-            ➤ Predict optimal watering needs using real-time sensor data and ML models.<br />
-            ➤ Automate irrigation, Fan, ventilation, and alarms based on environmental conditions.<br />
-            ➤ Provide interactive web access for monitoring, controlling, and logging data.<br /><br />
-
-            <u><b>Team Member Contributions:</b></u><br />
-            ● IoT Environmental Monitoring & Watering Optimization<br />
-            ● Fertilizer Scheduling Optimization<br />
-            ● Harvesting Schedule Optimization<br />
-            ● Tomato Disease Detection & Treatment Recommendation<br /><br />
-
-            Tools & Technologies: <b>
-              Python, Flask, TensorFlow, Scikit-learn, Firebase, Arduino, ESP32, Sensors (Soil, Temp, Humidity, Light,
-              Ultrasonic), OLED Display, Relays, HTML, CSS, JavaScript, Bootstrap
-            </b><br /><br />
-
-            Project Info Website: <a href="https://greenbrainak.netlify.app/" target="_blank">View Live
-              Website</a><br />
-          </p>
-        </div>
-
-        <div class="about_img" data-aos="zoom-in-left" data-aos-delay="50">
-          <img src="./assets/img/Projects_Images/RP_Automation_DashBoard.png" alt="Smart Greenhouse Project"
-            style="border-radius: 8px;" />
-          <img src="./assets/img/Projects_Images/RP_Irrigation_UI.png" alt="Smart Greenhouse Project"
-            style="border-radius: 8px; margin-top: 10px;" />
-          <img src="./assets/img/Projects_Images/RP_Irrigation_Output.png" alt="Smart Greenhouse Project"
-            style="border-radius: 8px; margin-top: 10px;" />
-        </div>
-
-
-        <!-- Online Event Ticketing Web Application -->
-        <div>
-          <h2 class="about_subtitle" data-aos="fade-down" data-aos-delay="350">
-            Online Event Ticketing Web Application
-          </h2>
-          <p class="about_text" data-aos="fade-down" data-aos-delay="450">
-            Role: <b>Full-Stack Developer</b><br />
-
-            Description: <b>
-              Developed a full-featured online event ticketing system for a leading Sri Lankan event management company.
-              Implemented role-based access for Admin, Organizers, and Customers, secure user authentication, event
-              management,
-              online ticket booking, QR-coded e-tickets, loyalty points, discounts, and detailed sales and user reports.
-            </b><br /><br />
-
-            Tools & Technologies: <b>ASP.NET Core MVC 8.0, C#, Entity Framework Core, MySQL, ASP.NET Identity,
-              Bootstrap, jQuery, QRCoder</b><br /><br />
-
-            GitHub Link: <a href="https://github.com/YourRepoLinkHere" target="_blank">click here</a>.
-          </p>
-        </div>
-
-        <div class="about_img" data-aos="zoom-in-right" data-aos-delay="650">
-          <br /><br />
-          <img src="./assets/img/Projects_Images/OnlineEventTicketing.png" alt="Online Event Ticketing"
-            style="border-radius: 8px;" />
-        </div>
-
-        <!-- Bakery Management Web Application -->
-        <div>
-          <h2 class="about_subtitle" data-aos="fade-down" data-aos-delay="350">
-            Bakery Management Web Application
-          </h2>
-          <p class="about_text" data-aos="fade-down" data-aos-delay="450">
-            Role: <b>Full-Stack Developer</b><br />
-
-            Description: <b>
-              Developed a role-based bakery management system with secure authentication for Admin, Staff, and
-              Customers.
-              Implemented features for product management, order processing, inventory tracking, and sales monitoring
-              to streamline bakery operations.
-            </b><br /><br />
-
-            Tools & Technologies: <b>Laravel, PHP, MySQL, Blade Templates, Bootstrap, JavaScript</b><br /><br />
-
-            GitHub Link: <a href="https://github.com/YourRepoLinkHere" target="_blank">click here</a>.
-          </p>
-        </div>
-
-        <div class="about_img" data-aos="zoom-in-left" data-aos-delay="50">
-          <img src="./assets/img/Projects_Images/BakeryManagement.png" alt="Bakery Management App"
-            style="border-radius: 8px;" />
-        </div>
-
-
-        <!-- Internship Project -->
-        <div>
-          <h2 class="about_subtitle" data-aos="fade-down" data-aos-delay="350">
-            Client Management System (CMS)
-          </h2>
-          <p class="about_text" data-aos="fade-down" data-aos-delay="450">
-            Role: <b>Web Developer & Group Leader</b><br />
-
-            About: <b>Internship Projects</b><br />
-
-            Description: <b>
-              Led the development of a web-based Client Management System during my internship. As the group leader, I
-              designed and implemented all task management features, including responsive admin-side and employee-side
-              interfaces. Additionally, I developed the back-end to ensure seamless task
-              management, and real-time updates, with a mobile-first approach for full responsiveness.
-
-            </b><br /><br />
-
-            Tools Used: <b>React.js, Node.js,Express.js, MySQL, HTML, CSS, JavaScript, Etc.</b><br /><br />
-
-            GitHub Link: <a
-              href="https://github.com/AsardeenAzees/CMS_Responsive_FrontEnd_And_BackEnd_MyGroupPart_Integrated.git"
-              target="_blank">click
-              here</a>.
-          </p>
-        </div>
-
-        <div class="about_img" data-aos="zoom-in-right" data-aos-delay="650">
-          <br /><br />
-          <img src="./assets/img/Projects_Images/cms-inter-pro-2.png" alt="CMS 2nd Project image"
-            style="border-radius: 8px;" />
-        </div>
-
-
-        <!--3rd year 2nd semi Project-->
-        <div>
-          <h2 class="about_subtitle" data-aos="fade-down" data-aos-delay="350">
-            Shopping Mall Web Application
-          </h2>
-          <p class="about_text" data-aos="fade-down" data-aos-delay="450">
-            Module: <b>I T Project Management - ITPM</b><br />
-            Semester: <b>3rd Year, 2nd Semester</b><br />
-            Description: <b>Designed and developed a full-stack MERN web application for a shopping mall called
-              Ezy-Mall.
-              Implemented separate admin and client sides for managing shop details, products, shop
-              owners, and customers. Included unique features such as a live vehicle parking system and a collaborative
-              live chat
-              room.</b><br /><br />
-            Tools Used: <b>MongoDB, Express.js, React.js, Node.js, CSS, HTML (MERN), APIs</b><br /><br />
-            GitHub link: <a href="https://github.com/AsardeenAzees/ITPM.git" target="_blank">click here</a>.
-          </p>
-        </div>
-
-        <div class="about_img" data-aos="zoom-in-left" data-aos-delay="50">
-          <img src="./assets/img/Projects_Images/ITPM_ShoppingMall_App_EZY-mall.png" alt="profile image"
-            style="border-radius: 8px;" />
-        </div>
-
-        <!-- 3rd year 2nd semi Project - Social Media Fitness Web Application -->
-        <div>
-          <h2 class="about_subtitle" data-aos="fade-down" data-aos-delay="350">
-            Social Media Fitness Web Application
-          </h2>
-          <p class="about_text" data-aos="fade-down" data-aos-delay="450">
-            Module: <b>Programming Application Interface - PAF</b><br />
-            Semester: <b>3rd Year, 2nd Semester</b><br />
-            Description: <b>Developed a social media web application focused on fitness. Users can share fitness
-              details, track
-              workouts, and connect with other fitness enthusiasts. The application supports dynamic data fetching via
-              API calls
-              and is fully mobile responsive. It also integrates Git and GitHub for version control and commit
-              tracking.</b><br /><br />
-            Tools Used: <b>Spring Boot, React.js, Node.js, Express.js, MongoDB, CSS, HTML, Git, GitHub</b><br /><br />
-            GitHub link: <a href="https://github.com/PAF-IT3030/paf-assignment-2024-jun_we_15_peak_performers.git"
-              target="_blank">click here</a>.
-          </p>
-        </div>
-
-        <div class="about_img" data-aos="zoom-in-right" data-aos-delay="50">
-          <img src="./assets/img/Projects_Images/PAF_SocialMedia.png" alt="fitness app image"
-            style="border-radius: 8px;" />
-        </div>
-
-
-        <!--3rd year 1sr semi Project-->
-        <div>
-          <h2 class="about_subtitle" data-aos="fade-down" data-aos-delay="350">
-            Hi-Fi Prototype Development - UI/UX
-          </h2>
-          <p class="about_text" data-aos="fade-down" data-aos-delay="450">
-            Module: <b>Human Computer Interaction - HCI</b><br />
-            Semester: <b>3rd Year, 1st Semester</b><br />
-            Description: <b>In this project, I took on a leadership role in the frontend development and UI/UX design
-              for a Human-Computer
-              Interaction module. Our primary objective was to identify and address usability issues within a given
-              system, ensuring a
-              seamless and intuitive user experience. The project was provided a practical application of HCI theories
-              and principles.</b><br /><br />
-            Tools Used: <b>Figma for UI/UX design</b><br /><br />
-            Figma link : <a
-              href="https://www.figma.com/file/G6pydDYMhXyAUvH0tIh32C/Untitled?type=design&node-id=1%3A763&mode=design&t=EwEnRYvoHkADCaun-1"
-              target="_blank">click here</a>.
-          </p>
-        </div>
-
-        <div class="about_img" data-aos="zoom-in-left" data-aos-delay="50">
-          <img src="./assets/img/Projects_Images/HCI_Hi-Fi_Prototyoe.png" alt="" style="border-radius: 8px;" />
-        </div>
-
-
-        <!--2nd year 2nd semi Project-->
-        <div>
-          <h2 class="about_subtitle" data-aos="fade-down" data-aos-delay="350">
-            E-Commerce Shopping Application
-          </h2>
-          <p class="about_text" data-aos="fade-down" data-aos-delay="450">
-
-            Module: <b>Information Technology Project - ITP</b><br />
-
-            Semester: <b>2nd Year, 2nd Semester</b><br />
-
-            Description: <b>Developed and implemented a comprehensive web application for an E-commerce shopping card
-              application
-              system. collaborated with a multidisciplinary team to ensure seamless integration of frontend and backend
-              components.</b><br /><br />
-
-            Tools Used: <b>MongoDB, Express.js, React.js, Node.js, CSS, HTML (MERN)</b>
-            <br /><br />GitHub link : <a href="https://github.com/AsardeenAzees/Online_Food_City_OFM.git"
-              target="_blank">click here</a>.
-
-          </p>
-        </div>
-
-        <div class="about_img" data-aos="zoom-in-right" data-aos-delay="650">
-          <br /><br />
-          <img src="./assets/img/Projects_Images/ITP_E-Commese_App.png" alt="foodcity image"
-            style="border-radius: 8px;" />
-        </div>
-
-
-        <!--2nd year 2nt semi Project-->
-        <div>
-          <h2 class="about_subtitle" data-aos="fade-down" data-aos-delay="350">
-            Financial Management App
-          </h2>
-          <p class="about_text" data-aos="fade-down" data-aos-delay="450">
-
-            Module: <b>Mobile Application Development - MAD</b><br />
-
-            Semester: <b>2nd Year, 2nd Semester</b><br />
-
-            Description: <b>
-              Developed a mobile app for financial management using Android Studio and Kotlin, integrating Firebase
-              Database for secure data storage. The app enables users to track expenses, manage income, and create
-              personalized budgets for effective financial planning.
-            </b><br /><br />
-
-            Tools Used: <b>Android Studio, Kotlin, Firebase Database</b>
-
-            <br /><br />GitHub link : <a href="https://github.com/" target="_blank">click here</a>.
-
-          </p>
-        </div>
-
-        <div class="about_img" data-aos="zoom-in-left" data-aos-delay="650">
-          <br /><br />
-          <img src="./assets/img/Projects_Images/MAD_Finanical_App.png" alt="financial image"
-            style="border-radius: 8px;" />
-        </div>
-
-
-        <!--2nd year 1st semi Project-->
-        <div>
-          <h2 class="about_subtitle" data-aos="fade-down" data-aos-delay="350">
-            Online Vehicle Service Management System
-          </h2>
-          <p class="about_text" data-aos="fade-down" data-aos-delay="450">
-
-            Module: <b>Object-Oriented Programming - OOP</b><br />
-
-            Semester: <b>2nd Year, 1st Semester</b><br />
-
-            Description: <b>
-              Implemented a web application for efficient vehicle service management using Servlets, Java, JavaScript,
-              HTML, CSS, and
-              MySQL. The system allows users to schedule services, track vehicle maintenance, and streamline the overall
-              service
-              management process.
-            </b><br /><br />
-
-            Tools Used: <b>Servlets, Java, JavaScript, HTML, CSS, MySQL</b>
-
-            <br /><br />GitHub link : <a href="https://github.com/" target="_blank">click here</a>.
-
-          </p>
-        </div>
-
-        <div class="about_img" data-aos="zoom-in-right" data-aos-delay="650">
-          <br /><br />
-          <img src="./assets/img/Projects_Images/OOP_Wehicle_Service_webapp.png" alt="profile image"
-            style="border-radius: 8px;" />
-        </div>
-
-
-        <!--1st year 2nd semi Project-->
-        <div>
-          <h2 class="about_subtitle" data-aos="fade-down" data-aos-delay="350">
-            Web Application
-          </h2>
-          <p class="about_text" data-aos="fade-down" data-aos-delay="450">
-
-            Module: <b>Internet and Web Technologies - IWT</b><br />
-
-            Semester: <b>1st Year, 2nd Semester</b><br />
-
-            Description: <b>
-              Developed a basic web application as part of the Internet and Web Technologies course.
-            </b><br /><br />
-
-            Tools Used: <b>JavaScript, HTML, PHP, CSS, MySQL</b>
-
-            <br /><br />GitHub link : <a href="https://github.com/AsardeenAzees/iwt_project_Y1_S2.git"
-              target="_blank">click here</a>.
-
-          </p>
-        </div>
-
-        <div class="about_img" data-aos="zoom-in-left" data-aos-delay="650">
-          <br /><br />
-          <img src="./assets/img/Projects_Images/IWT_Web_Ap.png" alt="profile image" style="border-radius: 8px;" />
-        </div>
-
-      </div>
-
-    </section>
-
-    <!-- CERTIFICATE SECTION -->
-    <section class="work section" id="certificates">
-      <h2 class="section-title" data-aos="fade-down">Certificates</h2>
-
-      <div class="work_container bd_grid">
-
-        <div class="work_img" data-aos="fade-down" data-aos-delay="150">
-          <a href="https://code.sliit.org/certificates/4vyeytqbrf" target="_blank">
-            <img src="./assets/img/sliit_aiml_stage2.png" alt="SLIIT AI/ML Stage-02 Certificate" />
-          </a>
-        </div>
-
-        <div class="work_img" data-aos="fade-down" data-aos-delay="200">
-          <a href="https://code.sliit.org/certificates/rg5cbejkeu" target="_blank">
-            <img src="./assets/img/sliit_aiml_stage1.png" alt="SLIIT AI/ML Stage-01 Certificate" />
-          </a>
-        </div>
-
-        <div class="work_img" data-aos="fade-down" data-aos-delay="250">
-          <a href="https://coursera.org/verify/ET9ZY9LZZXJ5" target="_blank">
-            <img src="./assets/img/AWS_Badge_Certificate.png" alt="AWS Badge Certificate" />
-          </a>
-        </div>
-
-        <div class="work_img" data-aos="fade-down" data-aos-delay="300">
-          <a href="https://coursera.org/verify/ET9ZY9LZZXJ5" target="_blank">
-            <img src="./assets/img/Google UX Certificate_05.png"
-              alt="Google UX Certificate 05 in hifi prototype in figma" />
-          </a>
-        </div>
-
-        <div class="work_img" data-aos="fade-down" data-aos-delay="350">
-          <a href="https://coursera.org/verify/G2TBQXJUWWCF" target="_blank">
-            <img src="./assets/img/Google UX Certificate_03.png" alt="Google UX Certificate 03" />
-          </a>
-        </div>
-
-        <div class="work_img" data-aos="fade-down" data-aos-delay="400">
-          <a href="https://coursera.org/verify/899ENQ5CW7GE" target="_blank">
-            <img src="./assets/img/Google UX Certificate_02.png" alt="Google UX Certificate 02" />
-          </a>
-        </div>
-
-        <div class="work_img" data-aos="fade-down" data-aos-delay="450">
-          <a href="https://coursera.org/verify/3Y437NGEFVYN" target="_blank">
-            <img src="./assets/img/Google UX Certificate 01.png" alt="Google UX Certificate 01" />
-          </a>
-        </div>
-
-        <div class="work_img" data-aos="fade-down" data-aos-delay="500">
-          <a href="https://learn.mongodb.com/c/U8n2dSa3TSeYmLWogRKFvg" target="_blank">
-            <img src="./assets/img/MongoDB _Certificate.png" alt="Google UX Certificate 01" />
-          </a>
-        </div>
-
-        <div class="work_img" data-aos="fade-down" data-aos-delay="550">
-          <a href="https://www.sololearn.com/certificates/CC-LU5SQ7PB" target="_blank">
-            <img src="./assets/img/Java Intermediate - Solo Learn.png" alt="" />
-          </a>
-        </div>
-
-        <div class="work_img" data-aos="fade-down" data-aos-delay="600">
-          <a href="https://www.sololearn.com/certificates/CC-BAPBQHDR" target="_blank">
-            <img src="./assets/img/Introduction Java -  SoloLearn.png" alt="" />
-          </a>
-        </div>
-
-        <div class="work_img" data-aos="fade-down" data-aos-delay="650">
-          <a href="https://www.sololearn.com/certificates/CC-RFO5K2QG" target="_blank">
-            <img src="./assets/img/Into Java Script - soloLearn.png" alt="" />
-          </a>
-        </div>
-
-        <div class="work_img" data-aos="fade-down" data-aos-delay="700">
-          <a href="#" target="_blank">
-            <img src="./assets/img/html - gread learning.jpg" alt="#" />
-          </a>
-        </div>
-
-        <div class="work_img" data-aos="fade-down" data-aos-delay="750">
-          <a href="https://verify.mygreatlearning.com/verify/NRXTCXTX" target="_blank">
-            <img src="./assets/img/Java Script Project Certifivate - Gread Learning.png" alt="#" />
-          </a>
-        </div>
-
-
-      </div>
-    </section>
-
-
-    <!-- CV SECTION -->
-    <!--
-      <section class="work section" id="work">
-        <h2 class="section-title" data-aos="fade-down">My Resume</h2>
-
-        <a href="./assets/pdf/myCv.pdf" target="_blank" class="custom-button-container" data-aos="fade-down" data-aos-delay="250">
-          <button class="custom-button">Look My Resume</button>
-        </a>
-      
-      </section>      
-      -->
-
-    <!-- CONTACT SECTION -->
-
-    <section class="contact section" id="contact">
-      <h2 class="section-title" data-aos="fade-down">Contact</h2>
-
-      <div class="contact_container bd_grid">
-        <p class="skills_text" data-aos-delay="250" data-aos="fade-down">Azees Asardeen</p>
-        <p class="skills_text" data-aos-delay="300" data-aos="fade-down">Email: azeesasardeen@gmail.com</p>
-        <p class="skills_text" data-aos-delay="350" data-aos="fade-down">Phone: (+94) 075-8396064 ,(+94) 076-8437336 <i
-            class='bx bxl-whatsapp'></i></p>
-
-        <div class="home_social">
-
-          <a href="https://github.com/IT21231896" class="home_social-icon" data-aos="fade-down" target="_blank"><i
-              class="bx bxl-github"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-          <a href="https://www.linkedin.com/in/asardeen-azees/" class="home_social-icon" data-aos="fade-down"
-            data-aos-delay="250" target="_blank"><i
-              class="bx bxl-linkedin-square"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-
-          <a href="https://web.facebook.com/kijan.mohamed.7" class="home_social-icon" data-aos="fade-down"
-            data-aos-delay="300" target="_blank"><i
-              class="bx bxl-facebook-circle"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-          <a href="https://instagram.com/hijan_azar?igshid=YTQwZjQ0NmI0OA==" class="home_social-icon"
-            data-aos="fade-down" data-aos-delay="350" target="_blank"><i class="bx bxl-instagram"></i></a>
-
-        </div><br /><br />
-
-        <!-- Your CV download button goes here -->
-        <!--
-        <a href="./assets/pdf/myNew_Cv.pdf" target="_blank" class="custom-button-container" data-aos="fade-down"
-          data-aos-delay="150" style="padding-bottom: 20px;">
-          <button class="custom-button">Look My Resume</button>
-        </a>-->
-      </div>
-
-      <!-- Contact Form -->
-      <div class="contact_container bd_grid">
-        <form id="contact-form" class="contact_form">
-          <input type="text" name="from_name" placeholder="Name" class="control_input" data-aos="fade-right"
-            data-aos-delay="250" required />
-          <input type="email" name="from_email" placeholder="Email" class="control_input" data-aos="fade-right"
-            data-aos-delay="300" required />
-          <textarea name="message" cols="0" rows="10" placeholder="Message" class="control_input" data-aos="fade-right"
-            data-aos-delay="400" required></textarea>
-
-          <input type="submit" value="Send" class="control_button button" data-aos="fade-right" data-aos-delay="450" />
-        </form>
-      </div>
-
-    </section>
-
-    <!-- Footer Section -->
-    <footer class="footer">
-      <p class="footer_title" data-aos="fade-down">Asardeen Azees</p>
-
-      <div class="footer_socials">
-        <a href="https://github.com/IT21231896" class="footer_icon" data-aos="fade-down" data-aos-delay="250"
-          target="_blank"><i class="bx bxl-github"></i></a>
-        <a href="https://www.linkedin.com/in/asardeen-a-a82765215/" class="footer_icon" data-aos="fade-down"
-          data-aos-delay="350" target="_blank"><i class="bx bxl-linkedin-square"></i></a>
-        <a href="https://web.facebook.com/kijan.mohamed.7" class="footer_icon" data-aos="fade-down" data-aos-delay="450"
-          target="_blank"><i class="bx bxl-facebook-circle"></i></a>
-        <a href="https://instagram.com/hijan_azar?igshid=YTQwZjQ0NmI0OA==" class="footer_icon" data-aos="fade-down"
-          data-aos-delay="550" target="_blank"><i class="bx bxl-instagram"></i></a>
-      </div>
-
-      <p>
-        © 2026 Asardeen Azees. copyright all right reserved
-      </p>
-    </footer>
   </main>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> Asardeen Azees. All rights reserved.</p>
+      <a href="#home" aria-label="Back to top"><i class="bx bx-up-arrow-alt"></i> Back to top</a>
+    </div>
+  </footer>
+
   <script src="./assets/js/main.js"></script>
-
-  <script>
-    AOS.init({
-      duration: 1200,
-      once: false,
-    });
-  </script>
-
-  <!--Script for Dark Mode-->
-  <script>
-    const darkModeToggle = document.getElementById('darkModeToggle');
-    const body = document.body;
-    const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
-    if (isDarkMode) {
-      body.classList.add('dark-mode');
-      darkModeToggle.checked = true;
-    }
-    darkModeToggle.addEventListener('change', () => {
-      if (darkModeToggle.checked) {
-        body.classList.add('dark-mode');
-        localStorage.setItem('darkMode', 'enabled');
-      } else {
-        body.classList.remove('dark-mode');
-        localStorage.setItem('darkMode', 'disabled');
-      }
-    });
-  </script>
-
 </body>
-
 </html>
