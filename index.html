@@ -305,7 +305,38 @@
         <div class="project-grid">
           <article class="project-card project-card--featured card reveal">
             <div class="project-media">
-              <span class="project-badge">Featured</span>
+              <span class="project-badge">Latest</span>
+              <img src="./assets/img/Projects_Images/Zumora-AI-Home.png" alt="Zumora AI landing page" width="800" height="500" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3>Zumora AI</h3>
+              <p class="project-meta">Live AI SaaS Platform | Full-Stack Developer</p>
+              <div class="project-body">
+                <p>
+                  Production-ready MERN SaaS for AI image generation and photo editing with multi-provider model switching,
+                  secure auth, usage controls, and a full admin panel for operational management.
+                </p>
+                <details class="project-details">
+                  <summary>Key highlights</summary>
+                  <div class="project-details-body">
+                    <p><strong>AI features:</strong> text-to-image generation, style-based photo editing, before/after comparison slider, prompt and image history, instant download/share.</p>
+                    <p><strong>Providers:</strong> Google Gemini, NVIDIA NIM, Hugging Face, and GitHub Models for reliability, cost control, and flexible model routing.</p>
+                    <p><strong>SaaS system:</strong> JWT auth, Google OAuth, OTP verification and reset, daily usage limits, user dashboard, profile management, and admin analytics tools.</p>
+                  </div>
+                </details>
+              </div>
+              <div class="tag-list">
+                <span>React.js</span><span>Tailwind CSS</span><span>Context API</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>JWT</span><span>Google OAuth</span><span>Gemini</span><span>NVIDIA NIM</span><span>Hugging Face</span><span>GitHub Models</span><span>Cloudinary</span><span>Vercel</span><span>Render</span><span>MongoDB Atlas</span>
+              </div>
+              <div class="project-actions">
+                <a class="link-pill" href="https://zumora-ai.vercel.app/" target="_blank" rel="noopener noreferrer"><i class="bx bx-link-external"></i> Live Demo</a>
+                <span class="link-pill link-pill--muted">Case Study (link ready)</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card card reveal">
+            <div class="project-media">
               <img src="./assets/img/Projects_Images/RP_Automation_DashBoard.png" alt="Smart greenhouse dashboard" width="800" height="500" loading="lazy">
             </div>
             <div class="project-content">
@@ -545,6 +576,75 @@
         </div>
       </div>
     </section>
+
+    <div class="project-modal" id="project-modal" aria-hidden="true">
+      <div class="project-modal-backdrop" data-modal-close="true"></div>
+      <section
+        class="project-modal-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="project-modal-title"
+        aria-describedby="project-modal-tagline"
+      >
+        <button class="project-modal-close" id="project-modal-close" type="button" aria-label="Close project details">
+          <i class="bx bx-x"></i>
+        </button>
+
+        <div class="project-modal-layout">
+          <div class="project-modal-gallery">
+            <div class="project-slider" id="project-slider" aria-live="polite"></div>
+
+            <div class="project-slider-nav" id="project-slider-nav">
+              <button class="project-slider-arrow" id="project-slider-prev" type="button" aria-label="Previous image">
+                <i class="bx bx-chevron-left"></i>
+              </button>
+              <div class="project-slider-dots" id="project-slider-dots" role="tablist" aria-label="Project images"></div>
+              <button class="project-slider-arrow" id="project-slider-next" type="button" aria-label="Next image">
+                <i class="bx bx-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="project-modal-content">
+            <p class="project-modal-kicker">Project details</p>
+            <h3 id="project-modal-title">Project</h3>
+            <p class="project-modal-tagline" id="project-modal-tagline"></p>
+
+            <div class="project-modal-tags" id="project-modal-tags"></div>
+
+            <div class="project-modal-section">
+              <h4>Overview</h4>
+              <p id="project-modal-description"></p>
+            </div>
+
+            <div class="project-modal-section">
+              <h4>Problem solved</h4>
+              <p id="project-modal-problem"></p>
+            </div>
+
+            <div class="project-modal-section">
+              <h4>Key features</h4>
+              <ul id="project-modal-features"></ul>
+            </div>
+
+            <div class="project-modal-section">
+              <h4>Role and contribution</h4>
+              <p id="project-modal-role"></p>
+            </div>
+
+            <div class="project-modal-section">
+              <h4>Tech stack</h4>
+              <div class="project-modal-stack" id="project-modal-stack"></div>
+            </div>
+
+            <div class="project-modal-footer">
+              <span class="project-modal-status" id="project-modal-status"></span>
+              <div class="project-modal-links" id="project-modal-links"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
 
     <section class="section" id="certificates">
       <div class="container">
