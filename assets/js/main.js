@@ -11,7 +11,6 @@ const sendButton = document.getElementById("send-button");
 const formStatus = document.getElementById("form-status");
 const year = document.getElementById("year");
 const reveals = document.querySelectorAll(".reveal");
-const skillItems = document.querySelectorAll(".skill-item");
 const projectCards = [...document.querySelectorAll(".project-card")];
 const projectModal = document.getElementById("project-modal");
 const projectModalClose = document.getElementById("project-modal-close");
@@ -203,23 +202,6 @@ const revealObserver = new IntersectionObserver(
 );
 
 reveals.forEach((el) => revealObserver.observe(el));
-
-const skillObserver = new IntersectionObserver(
-  (entries, observer) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
-      const level = entry.target.getAttribute("data-level");
-      const fill = entry.target.querySelector(".skill-fill");
-      if (fill && level) {
-        fill.style.width = `${Math.max(0, Math.min(Number(level), 100))}%`;
-      }
-      observer.unobserve(entry.target);
-    });
-  },
-  { threshold: 0.35 }
-);
-
-skillItems.forEach((item) => skillObserver.observe(item));
 
 const slugify = (value) =>
   value
