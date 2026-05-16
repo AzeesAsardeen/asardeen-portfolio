@@ -505,7 +505,7 @@ const ensureArray = (value) => (Array.isArray(value) ? value : []);
 
 const buildProjectRecord = (card) => {
   const title = card.querySelector(".project-content h3")?.textContent?.trim() || "Project";
-  const id = slugify(title);
+  const id = card.dataset.projectId || slugify(title);
   const meta = card.querySelector(".project-meta")?.textContent?.trim() || "Project case study";
   const shortDescription = card.querySelector(".project-body p")?.textContent?.trim() || "";
   const techStack = [...card.querySelectorAll(".tag-list span")].map((el) => el.textContent.trim()).filter(Boolean);
