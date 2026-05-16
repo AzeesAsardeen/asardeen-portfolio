@@ -230,6 +230,60 @@ const slugify = (value) =>
     .replace(/\s+/g, "-");
 
 const PROJECT_CONTENT = {
+  "ai-recruitment-workflow-assistant": {
+    tagline: "Private n8n Automation | AI Agent + OCR + Google Workspace",
+    description:
+      "This is a private AI-powered workflow automation system built to process recruitment information, analyze job requirements, match suitable candidate profiles, and generate review-ready application documents. The system was designed as a human-in-the-loop assistant, meaning it prepares drafts and supporting documents but keeps final review and sending under manual control.",
+    problem:
+      "Job searching involves repetitive work: checking listings, reading job posters, extracting requirements, matching the correct CV, writing tailored cover letters, preparing emails, and tracking which opportunities were already processed. This workflow reduces that manual workload while still keeping professional judgment and final approval with the user.",
+    features: [
+      "Telegram command-based workflow control.",
+      "Authorized-user access check.",
+      "Job listing data collection and filtering.",
+      "Duplicate detection to avoid processing the same opportunity again.",
+      "Role classification based on job title and keyword logic.",
+      "Smart CV/profile selection based on job category.",
+      "OCR extraction from job poster images.",
+      "AI agent analysis of job description, responsibilities, requirements, benefits, location, and employment type.",
+      "Candidate-fit scoring logic.",
+      "Tailored cover-letter draft generation.",
+      "Professional recruiter email draft generation.",
+      "Google Sheets logging for processed, rejected, and error records.",
+      "Google Docs cover-letter creation.",
+      "Google Drive CV and document handling.",
+      "Gmail draft creation with attachments.",
+      "Error logging for scraping, OCR, and AI-processing failures.",
+      "Final Telegram summary after workflow execution."
+    ],
+    role:
+      "I designed and built the complete automation workflow, including workflow architecture, scraping logic, filtering rules, AI prompt design, OCR integration, CV matching logic, Google Workspace integrations, Gmail draft automation, duplicate checking, and error handling. I also implemented custom JavaScript Code nodes to clean, classify, transform, and route data across the workflow.",
+    technicalWorkflow: [
+      "Telegram command starts the automation.",
+      "Authorized-user validation prevents unwanted access.",
+      "Job listing data is collected from a recruitment source.",
+      "Unrelated or unsuitable roles are filtered out.",
+      "Existing records are checked to avoid duplicate draft creation.",
+      "The system classifies the job category.",
+      "The matching CV/profile is selected.",
+      "Job poster content is extracted using OCR.",
+      "AI agents analyze the job content and candidate profile.",
+      "The system generates a tailored cover letter and recruiter email draft.",
+      "Google Docs and Gmail drafts are prepared for manual review.",
+      "Results, errors, and processing status are logged in Google Sheets."
+    ],
+    businessValue: [
+      "Demonstrates advanced n8n workflow architecture combining data extraction, AI reasoning, document generation, cloud storage, messaging control, and human review.",
+      "The same architecture can be adapted for recruitment teams, HR screening, sales prospecting, document processing, lead qualification, CRM updates, and internal business operations.",
+      "Keeps final review and sending under human control with a clear approval step."
+    ],
+    skills:
+      "n8n workflow architecture, AI agent orchestration, prompt engineering, OCR integration, JavaScript automation logic, Telegram bot control, Google Sheets automation, Google Docs automation, Google Drive integration, Gmail draft automation, data extraction, duplicate detection, role classification, error handling, and human-in-the-loop business automation.",
+    impact:
+      "The system is intentionally human-in-the-loop. It prepares structured, personalized drafts for review, helping improve speed while keeping quality control and professional responsibility.",
+    status: "Private demo available on request",
+    badges: ["Latest", "AI automation", "Private system"],
+    screenshots: ["./assets/img/Projects_Images/ai-recruitment-workflow.png"]
+  },
   "bookshop-whatsapp-inventory-automation-agent": {
     tagline: "A real-world n8n automation system for small and medium bookshops to manage customer enquiries, stock checks, reservations, and order requests through WhatsApp.",
     description:
