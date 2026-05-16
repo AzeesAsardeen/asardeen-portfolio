@@ -1614,7 +1614,8 @@ html.modal-open {
   line-height: 1.58;
 }
 
-.project-modal-section ul {
+.project-modal-section ul,
+.project-modal-section ol {
   margin-top: 0.4rem;
   padding-left: 1rem;
 }

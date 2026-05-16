@@ -22,6 +22,14 @@ const projectModalDescription = document.getElementById("project-modal-descripti
 const projectModalProblem = document.getElementById("project-modal-problem");
 const projectModalFeatures = document.getElementById("project-modal-features");
 const projectModalRole = document.getElementById("project-modal-role");
+const projectModalWorkflowSection = document.getElementById("project-modal-workflow-section");
+const projectModalWorkflow = document.getElementById("project-modal-workflow");
+const projectModalBusinessSection = document.getElementById("project-modal-business-section");
+const projectModalBusiness = document.getElementById("project-modal-business");
+const projectModalSkillsSection = document.getElementById("project-modal-skills-section");
+const projectModalSkills = document.getElementById("project-modal-skills");
+const projectModalImpactSection = document.getElementById("project-modal-impact-section");
+const projectModalImpact = document.getElementById("project-modal-impact");
 const projectModalStack = document.getElementById("project-modal-stack");
 const projectModalStatus = document.getElementById("project-modal-status");
 const projectModalLinks = document.getElementById("project-modal-links");
@@ -222,6 +230,59 @@ const slugify = (value) =>
     .replace(/\s+/g, "-");
 
 const PROJECT_CONTENT = {
+  "bookshop-whatsapp-inventory-automation-agent": {
+    tagline: "A real-world n8n automation system for small and medium bookshops to manage customer enquiries, stock checks, reservations, and order requests through WhatsApp.",
+    description:
+      "This project is a practical WhatsApp-based business automation system designed for bookshops and local retail shops. The goal is to reduce repeated manual customer replies, make stock information easier to access, and give customers a simple way to check books, prices, availability, reservations, and COD order requests without calling or visiting the shop first. The workflow was built using n8n as the automation engine, WhatsApp Cloud API for messaging, Google Sheets as a lightweight inventory and order database, and custom JavaScript Code nodes for message understanding, reply generation, customer language flow, and business rules.",
+    problem:
+      "Many small shops still handle inventory and customer enquiries manually. Customers repeatedly ask whether a book is available, what the price is, whether the shop can keep one copy, whether delivery is possible, and whether they can be notified when stock returns. This system turns those repeated messages into an automated WhatsApp experience while still keeping staff confirmation for important actions like delivery, COD, and reservations.",
+    features: [
+      "WhatsApp customer chat automation using n8n.",
+      "English and Tamil language selection for local customer support.",
+      "Reset option where the customer can send 0 anytime to restart the chat and change language.",
+      "Simple customer-friendly commands with examples.",
+      "Book availability, price, category, and stock checking.",
+      "Fuzzy book search to handle partial names and spelling mistakes.",
+      "Order request handling with quantity and total price calculation.",
+      "Pickup reservation request flow with staff confirmation.",
+      "Stock alert request flow for unavailable books.",
+      "Stop/unsubscribe flow for notification alerts.",
+      "Delivery/COD information replies with staff approval logic.",
+      "Location and opening-hours replies.",
+      "Spam/unreadable-message handling for safer automation.",
+      "Google Sheets order logging for easy shop-owner review.",
+      "Custom JavaScript logic inside n8n Code nodes."
+    ],
+    role:
+      "I designed the automation logic, customer conversation flow, WhatsApp message handling, multilingual UX, inventory lookup process, and order request structure. I also developed the custom JavaScript logic inside n8n to identify customer intent, match books from the inventory sheet, calculate totals, handle reset flow, and keep the conversation simple for ordinary non-technical users.",
+    technicalWorkflow: [
+      "WhatsApp Trigger receives the customer message.",
+      "Code node extracts the phone number, customer name, message type, and text body.",
+      "Google Sheets node reads the current book inventory.",
+      "Code node processes the message, detects language, intent, book name, quantity, and action.",
+      "If the message is an order, reservation, or alert request, the system saves it into the Orders sheet.",
+      "WhatsApp reply node sends a clear customer response in the selected language."
+    ],
+    businessValue: [
+      "Reduces repetitive manual replies for shop staff.",
+      "Helps customers check stock before visiting the shop.",
+      "Supports local language communication.",
+      "Collects order and reservation requests automatically.",
+      "Creates a simple digital record of customer demand.",
+      "Can be adapted to other Sri Lankan local businesses such as bookshops, textile shops, stationery shops, pharmacies, hardware shops, and small retailers."
+    ],
+    skills:
+      "n8n workflow design, WhatsApp Cloud API integration, webhook automation, Google Sheets automation, JavaScript inside automation workflows, multilingual customer UX, intent detection, fuzzy search logic, order flow design, inventory automation, business process automation, customer support automation, and practical problem-solving for small businesses.",
+    impact:
+      "The system demonstrates how a small local shop can use automation to provide a 24/7 customer enquiry assistant without building a complex full-scale application first. It is lightweight, low-cost, easy to test, and practical for real business use.",
+    status: "Private workflow demo available on request",
+    badges: ["Latest", "Automation", "Business system"],
+    screenshots: [
+      "./assets/img/Projects_Images/bookshop-whatsapp-agent.png",
+      "./assets/img/Projects_Images/bookshop-whatsapp-agent2.png",
+      "./assets/img/Projects_Images/bookshop-whatsapp-agent3.png"
+    ]
+  },
   "smart-greenhouse-decision-support-system": {
     tagline: "IoT + ML automation for precision greenhouse operations.",
     description:
@@ -451,9 +512,9 @@ const buildProjectRecord = (card) => {
   const mediaImage = card.querySelector(".project-media img");
   const image = mediaImage
     ? {
-        src: mediaImage.getAttribute("src") || "",
-        alt: mediaImage.getAttribute("alt") || `${title} screenshot`
-      }
+      src: mediaImage.getAttribute("src") || "",
+      alt: mediaImage.getAttribute("alt") || `${title} screenshot`
+    }
     : null;
 
   const actionLinks = [...card.querySelectorAll(".project-actions a")].map((link) => ({
@@ -483,6 +544,10 @@ const buildProjectRecord = (card) => {
         ? config.features
         : ["Responsive user experience", "Backend-connected workflow", "Production-oriented engineering decisions"],
     role: config.role || meta,
+    technicalWorkflow: ensureArray(config.technicalWorkflow),
+    businessValue: ensureArray(config.businessValue),
+    skills: config.skills || "",
+    impact: config.impact || "",
     status: config.status || (liveLink || githubLink ? "Public links available" : "Project details available on request"),
     badges: ensureArray(config.badges),
     stack: ensureArray(config.techStack).length > 0 ? config.techStack : techStack,
@@ -510,6 +575,27 @@ const createLinkPill = (label, href, iconClass) => {
   anchor.rel = "noopener noreferrer";
   anchor.innerHTML = `<i class="${iconClass}" aria-hidden="true"></i> ${label}`;
   return anchor;
+};
+
+const renderOptionalListSection = (section, list, values) => {
+  if (!section || !list) return;
+  list.innerHTML = "";
+  const items = ensureArray(values).filter(Boolean);
+  section.hidden = !items.length;
+  if (!items.length) return;
+
+  items.forEach((item) => {
+    const li = document.createElement("li");
+    li.textContent = item;
+    list.append(li);
+  });
+};
+
+const renderOptionalTextSection = (section, textElement, value) => {
+  if (!section || !textElement) return;
+  const text = typeof value === "string" ? value.trim() : "";
+  section.hidden = !text;
+  textElement.textContent = text;
 };
 
 const stopModalAutoplay = () => {
@@ -708,6 +794,11 @@ const openProjectModal = (project) => {
     li.textContent = feature;
     projectModalFeatures.append(li);
   });
+
+  renderOptionalListSection(projectModalWorkflowSection, projectModalWorkflow, project.technicalWorkflow);
+  renderOptionalListSection(projectModalBusinessSection, projectModalBusiness, project.businessValue);
+  renderOptionalTextSection(projectModalSkillsSection, projectModalSkills, project.skills);
+  renderOptionalTextSection(projectModalImpactSection, projectModalImpact, project.impact);
 
   projectModalStack.innerHTML = "";
   const stackList = project.stack.length ? project.stack : ["Not specified"];
