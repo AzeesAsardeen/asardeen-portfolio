@@ -362,6 +362,7 @@ const PROJECT_CONTENT = {
       "./assets/img/Projects_Images/Zumora-AI-Home.png",
       "./assets/img/Projects_Images/Zumora-AI-Dashboard.png",
       "./assets/img/Projects_Images/Zumora-AI-Image Generation Page.png",
+      "./assets/img/Projects_Images/Zumora-AI-Image Editing UI.png",
       "./assets/img/Projects_Images/Zumora-AI-Login.png",
       "./assets/img/Projects_Images/Zumora-AI-Profile.png",
       "./assets/img/Projects_Images/Admin-Zumora-Dashboard.png",
