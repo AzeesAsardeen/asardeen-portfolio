@@ -382,7 +382,7 @@ const PROJECT_CONTENT = {
       "Sales and user reporting views for operations."
     ],
     role: "Full-stack developer building core backend and frontend modules with database-backed workflows.",
-    status: "Repository private / not published yet",
+    status: "Source code available",
     badges: ["Enterprise style"],
     screenshots: ["./assets/img/Projects_Images/OnlineEventTicketing.png"]
   },
@@ -399,7 +399,7 @@ const PROJECT_CONTENT = {
       "Sales overviews for day-to-day decisions."
     ],
     role: "Full-stack developer implementing core modules and workflow integration.",
-    status: "Repository private / not published yet",
+    status: "Source code available",
     screenshots: ["./assets/img/Projects_Images/BakeryManagement.png"]
   },
   "client-management-system-cms": {
