@@ -466,6 +466,42 @@ const PROJECT_CONTENT = {
     badges: ["Design"],
     screenshots: ["./assets/img/Projects_Images/HCI_Hi-Fi_Prototyoe.png"]
   },
+  "career-connect-recruitment-mobile-app-uiux": {
+    tagline: "UI/UX Design Assessment – Mobile Application Prototype",
+    description:
+      "Career Connect is a mobile recruitment and applicant-management prototype designed to simplify the hiring process for candidates and employers. The project progressed from low-fidelity wireframes to a polished high-fidelity mobile interface with clear navigation and task-focused user flows.",
+    problem:
+      "Job searching and candidate management can become complicated when vacancy discovery, applications, applicant review, job publishing, and interview scheduling are handled through separate or unclear processes. This design combines these activities into one consistent mobile experience.",
+    features: [
+      "Login and role selection for job seekers and employers.",
+      "Job search, filtering, recommendations, and vacancy details.",
+      "Resume attachment and mobile job applications.",
+      "Employer dashboard with vacancy and applicant summaries.",
+      "Job creation and publishing.",
+      "Applicant search and status filtering.",
+      "Candidate profile review.",
+      "Shortlist and reject actions.",
+      "Interview scheduling.",
+      "Consistent bottom navigation."
+    ],
+    role:
+      "Designed the complete mobile user experience and interface, including low-fidelity wireframes, high-fidelity screens, navigation structure, reusable UI components, candidate flows, employer flows, and the Figma prototype.",
+    techStack: [
+      "Figma",
+      "UI/UX Design",
+      "Mobile App Design",
+      "Low-Fidelity Wireframing",
+      "High-Fidelity Prototyping",
+      "User Flow Design",
+      "Interaction Design"
+    ],
+    status: "High-fidelity design prototype completed",
+    badges: ["UI/UX Design", "Mobile Prototype"],
+    screenshots: [
+      "./assets/img/Projects_Images/career-connect-lofi-wireframes.png",
+      "./assets/img/Projects_Images/career-connect-hifi-prototype.png"
+    ]
+  },
   "e-commerce-shopping-application": {
     tagline: "Team-built MERN commerce workflow application.",
     description:
