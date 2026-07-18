@@ -319,6 +319,124 @@ const PROJECT_CONTENT = {
       "./assets/img/Projects_Images/bookshop-whatsapp-agent3.png"
     ]
   },
+  "ak-hospital-qa-automation": {
+    tagline: "Full-Stack Development | Manual & Automation Testing",
+    description:
+      "AK Hospital is a virtual appointment management platform designed to support patients, doctors, receptionists, and administrators. The project combines full-stack development with manual testing, API testing, browser automation, and continuous integration.",
+    problem:
+      "Hospital appointment workflows require secure role-based access, dependable booking and status handling, and reliable validation across the user interface, APIs, and database. This project brings those workflows together and verifies them with layered manual and automated QA coverage.",
+    features: [
+      "Patient appointment booking.",
+      "Appointment-status search.",
+      "Admin staff management.",
+      "Doctor appointment dashboard.",
+      "Receptionist search and filtering.",
+      "Role-based authentication.",
+      "JWT authentication.",
+      "Protected routes.",
+      "API and database-driven workflows."
+    ],
+    technicalWorkflow: [
+      "Designed manual test scenarios and test cases.",
+      "Performed functional, regression, integration, and role-based testing.",
+      "Built Playwright end-to-end tests.",
+      "Automated appointment booking and status-search workflows.",
+      "Automated role-based login and protected-route validation.",
+      "Created Playwright API tests for appointment endpoints.",
+      "Validated REST APIs using Postman.",
+      "Tested authentication, doctor listing, appointment creation, status search, validation, and error-handling scenarios.",
+      "Configured GitHub Actions CI with a MongoDB test service.",
+      "Added seeded test data and automated test execution.",
+      "Configured Playwright HTML report upload as a CI artifact.",
+      "Prepared a test plan, test cases, regression checklist, sample bug reports, and QA summary."
+    ],
+    role:
+      "Developed the MERN application and completed its manual, API, and automated QA implementation. Designed the testing coverage, created Playwright automation scripts, validated APIs using Postman, prepared QA documentation, and configured the GitHub Actions pipeline.",
+    techStack: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Tailwind CSS",
+      "JavaScript",
+      "Playwright",
+      "Postman",
+      "REST API Testing",
+      "E2E Testing",
+      "Manual Testing",
+      "GitHub Actions",
+      "CI/CD",
+      "JWT Authentication"
+    ],
+    status: "Application and QA automation completed",
+    badges: ["Latest", "Full-Stack", "QA Automation"],
+    // Replace the empty strings below with the real AK Hospital URLs.
+    live: "",
+    liveLabel: "Live Website",
+    github: "",
+    githubLabel: "GitHub Repository",
+    screenshots: [
+      "./assets/img/Projects_Images/ak-hospital-home.png",
+      "./assets/img/Projects_Images/ak-hospital-appointment.png",
+      "./assets/img/Projects_Images/ak-hospital-dashboard.png"
+    ]
+  },
+  "demoqa-playwright-automation": {
+    tagline: "QA Automation | Playwright Testing Project",
+    description:
+      "This project demonstrates automated UI testing of the DemoQA practice website. It covers browser interactions, form validation, bookstore workflows, reusable page objects, test-data handling, secure credentials, and continuous integration. DemoQA is a public practice website used only as the target application; I did not develop or own the website.",
+    problem:
+      "Reliable browser automation requires maintainable page objects, reusable test data, secure credential handling, resilient synchronization, and repeatable CI execution. This project applies those practices to a public testing target across positive and negative UI scenarios.",
+    features: [
+      "Elements module.",
+      "Text Box.",
+      "Buttons.",
+      "Form validation.",
+      "Book Store.",
+      "Book search.",
+      "Book details.",
+      "User login and logout.",
+      "Profile-page validation.",
+      "Browser interaction scenarios.",
+      "Positive and negative test scenarios."
+    ],
+    technicalWorkflow: [
+      "Built Playwright tests using JavaScript, Jest, and Chromium.",
+      "Applied the Page Object Model.",
+      "Used JSON files for reusable test data.",
+      "Managed credentials securely using GitHub repository secrets.",
+      "Used resilient selectors and synchronized waits.",
+      "Implemented reusable page objects.",
+      "Added consistent browser setup and teardown.",
+      "Correctly handled asynchronous test operations.",
+      "Configured GitHub Actions to run tests on push and pull requests.",
+      "Executed tests in headless mode through CI."
+    ],
+    role:
+      "Created the manual and automated testing implementation for the DemoQA practice website. Designed test scenarios, developed Playwright scripts, implemented reusable page objects, improved test reliability, and configured automated GitHub Actions execution.",
+    techStack: [
+      "Playwright",
+      "JavaScript",
+      "Jest",
+      "Chromium",
+      "Page Object Model",
+      "JSON Test Data",
+      "UI Automation",
+      "Functional Testing",
+      "GitHub Actions",
+      "CI/CD",
+      "Git",
+      "GitHub"
+    ],
+    status: "QA automation project completed",
+    badges: ["QA Automation", "Playwright"],
+    // Replace the empty strings below with the real DemoQA URLs.
+    target: "",
+    targetLabel: "Target Website",
+    github: "",
+    githubLabel: "GitHub Repository",
+    screenshots: ["./assets/img/Projects_Images/demoqa-playwright-automation.png"]
+  },
   "smart-greenhouse-decision-support-system": {
     tagline: "IoT + ML automation for precision greenhouse operations.",
     description:
@@ -632,6 +750,7 @@ const buildProjectRecord = (card) => {
   const liveLink = actionLinks.find((link) => /live|demo/i.test(link.label))?.href || "";
   const githubLink = actionLinks.find((link) => /source|github|repo|cms|fms/i.test(link.label))?.href || "";
   const figmaLink = actionLinks.find((link) => /figma|design/i.test(link.label))?.href || "";
+  const targetLink = actionLinks.find((link) => /target website/i.test(link.label))?.href || "";
 
   const config = PROJECT_CONTENT[id] || {};
   const screenshots = ensureArray(config.screenshots)
@@ -661,8 +780,12 @@ const buildProjectRecord = (card) => {
     stack: ensureArray(config.techStack).length > 0 ? config.techStack : techStack,
     links: {
       live: config.live || liveLink,
+      liveLabel: config.liveLabel || "Live",
       github: config.github || githubLink,
-      figma: config.figma || figmaLink
+      githubLabel: config.githubLabel || "GitHub",
+      figma: config.figma || figmaLink,
+      target: config.target || targetLink,
+      targetLabel: config.targetLabel || "Target Website"
     },
     screenshots
   };
@@ -914,8 +1037,9 @@ const openProjectModal = (project) => {
 
   projectModalLinks.innerHTML = "";
   const links = [
-    createLinkPill("Live", project.links.live, "bx bx-link-external"),
-    createLinkPill("GitHub", project.links.github, "bx bxl-github"),
+    createLinkPill(project.links.liveLabel, project.links.live, "bx bx-link-external"),
+    createLinkPill(project.links.targetLabel, project.links.target, "bx bx-link-external"),
+    createLinkPill(project.links.githubLabel, project.links.github, "bx bxl-github"),
     createLinkPill("Figma", project.links.figma, "bx bx-palette")
   ].filter(Boolean);
 
