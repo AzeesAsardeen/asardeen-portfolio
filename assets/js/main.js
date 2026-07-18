@@ -466,6 +466,41 @@ const PROJECT_CONTENT = {
     badges: ["Design"],
     screenshots: ["./assets/img/Projects_Images/HCI_Hi-Fi_Prototyoe.png"]
   },
+  "travelingo-interactive-travel-dashboard-uiux": {
+    tagline: "UI/UX Design – Web Dashboard",
+    description:
+      "Travelingo is a desktop travel dashboard UI/UX project designed to help users discover destinations, organize travel schedules, and access important travel activities from one clear interface. This was created as a UI/UX practice project based on a Figma community tutorial/reference.",
+    problem:
+      "Travel planning can become fragmented when destination discovery, schedules, tickets, favourites, messages, and transactions are spread across separate experiences. Travelingo brings these activities together in a clear, task-focused dashboard.",
+    features: [
+      "Destination search.",
+      "Recommended travel destinations.",
+      "Destination pricing and ratings.",
+      "Travel calendar and date selection.",
+      "Personal trip schedule.",
+      "Ticket and favourites navigation.",
+      "Messages and transactions.",
+      "Promotional discount section.",
+      "User profile and notifications.",
+      "Clear sidebar navigation.",
+      "Modern card-based dashboard layout."
+    ],
+    role:
+      "Created the high-fidelity dashboard interface in Figma, including the layout, visual hierarchy, navigation, destination cards, calendar, trip schedule, reusable components, spacing, typography, and interaction-focused interface structure.",
+    techStack: [
+      "Figma",
+      "UI/UX Design",
+      "Web Dashboard Design",
+      "High-Fidelity Design",
+      "Prototyping",
+      "User Interface Design",
+      "Visual Hierarchy",
+      "Component Design"
+    ],
+    status: "High-fidelity dashboard design completed",
+    badges: ["UI/UX Design", "Web Dashboard"],
+    screenshots: ["./assets/img/Projects_Images/travelingo-dashboard-ui.png"]
+  },
   "career-connect-recruitment-mobile-app-uiux": {
     tagline: "UI/UX Design Assessment – Mobile Application Prototype",
     description:
