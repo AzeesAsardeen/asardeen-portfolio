@@ -500,24 +500,25 @@ body[data-theme="dark"] .brand-rays {
 }
 
 .theme-toggle-thumb-i--sun {
-  opacity: 0;
-  transform: scale(0.6);
+  opacity: 1;
+  transform: scale(1);
+  color: #f59e0b;
 }
 
 .theme-toggle-thumb-i--moon {
-  opacity: 1;
-  color: var(--primary);
-}
-
-.theme-toggle--dark .theme-toggle-thumb-i--moon {
   opacity: 0;
   transform: scale(0.6);
 }
 
 .theme-toggle--dark .theme-toggle-thumb-i--sun {
+  opacity: 0;
+  transform: scale(0.6);
+}
+
+.theme-toggle--dark .theme-toggle-thumb-i--moon {
   opacity: 1;
   transform: scale(1);
-  color: #f59e0b;
+  color: var(--primary);
 }
 
 .theme-toggle-label {
