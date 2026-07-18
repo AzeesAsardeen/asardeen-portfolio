@@ -370,10 +370,9 @@ const PROJECT_CONTENT = {
     ],
     status: "Application and QA automation completed",
     badges: ["Latest", "Full-Stack", "QA Automation"],
-    // Replace the empty strings below with the real AK Hospital URLs.
-    live: "",
+    live: "https://hospital-appointment-website.vercel.app/",
     liveLabel: "Live Website",
-    github: "",
+    github: "https://github.com/AsardeenAzees/Hospital-Appointment-Website",
     githubLabel: "GitHub Repository",
     screenshots: [
       "./assets/img/Projects_Images/ak-hospital-home.png",
@@ -430,10 +429,9 @@ const PROJECT_CONTENT = {
     ],
     status: "QA automation project completed",
     badges: ["QA Automation", "Playwright"],
-    // Replace the empty strings below with the real DemoQA URLs.
-    target: "",
+    target: "https://demoqa.com/",
     targetLabel: "Target Website",
-    github: "",
+    github: "https://github.com/AsardeenAzees/Demoqa-Playwright-Automation",
     githubLabel: "GitHub Repository",
     screenshots: ["./assets/img/Projects_Images/demoqa-playwright-automation.png"]
   },
